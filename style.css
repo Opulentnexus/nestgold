@@ -965,7 +965,6 @@ footer * {
 ========================================= */
 
 .hero {
-
     min-height: calc(100vh - 20px);
 
     position: relative;
@@ -978,16 +977,25 @@ footer * {
 
     background:
         radial-gradient(
-            circle at 75% 45%,
-            rgba(201,164,92,.12),
-            transparent 28%
+            circle at 78% 42%,
+            rgba(255, 190, 70, .16),
+            transparent 26%
         ),
-        #11100d;
+        radial-gradient(
+            circle at 15% 85%,
+            rgba(75, 0, 35, .35),
+            transparent 35%
+        ),
+        linear-gradient(
+            135deg,
+            #AD0450 0%,
+            #96033F 48%,
+            #70002F 100%
+        );
 
     color: white;
 
     padding: 90px 0 0;
-
 }
 
 
@@ -1001,16 +1009,16 @@ footer * {
 
     inset: 0;
 
-    opacity: .18;
+    opacity: .12;
 
     background-image:
         linear-gradient(
-            rgba(255,255,255,.035) 1px,
+            rgba(255,255,255,.06) 1px,
             transparent 1px
         ),
         linear-gradient(
             90deg,
-            rgba(255,255,255,.035) 1px,
+            rgba(255,255,255,.06) 1px,
             transparent 1px
         );
 
@@ -1022,7 +1030,6 @@ footer * {
             black,
             transparent 90%
         );
-
 }
 
 
@@ -1039,35 +1046,34 @@ footer * {
     filter: blur(90px);
 
     pointer-events: none;
-
 }
+
 
 .hero-glow-1 {
 
-    width: 350px;
+    width: 380px;
 
-    height: 350px;
+    height: 380px;
 
-    background: rgba(201,164,92,.10);
+    background: rgba(255, 205, 70, .18);
 
-    top: 20%;
+    top: 15%;
 
-    right: 15%;
-
+    right: 12%;
 }
+
 
 .hero-glow-2 {
 
-    width: 250px;
+    width: 300px;
 
-    height: 250px;
+    height: 300px;
 
-    background: rgba(201,164,92,.06);
+    background: rgba(76, 0, 40, .35);
 
-    bottom: 5%;
+    bottom: 0;
 
-    left: 5%;
-
+    left: 3%;
 }
 
 
