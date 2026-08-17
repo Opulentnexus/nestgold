@@ -536,3 +536,164 @@ Message: ${message || "No additional message."}`;
     });
 
 }
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================
+   MEDIA GALLERY SLIDER
+========================================= */
+
+const mediaTrack =
+    document.getElementById("mediaTrack");
+
+const mediaCards =
+    mediaTrack.querySelectorAll(".media-card");
+
+const mediaPrev =
+    document.querySelector(".media-prev");
+
+const mediaNext =
+    document.querySelector(".media-next");
+
+const mediaDots =
+    document.getElementById("mediaDots");
+
+
+/* =========================================
+   CREATE DOTS
+========================================= */
+
+mediaCards.forEach((card, index) => {
+
+    const dot =
+        document.createElement("button");
+
+    dot.className = "media-dot";
+
+    dot.setAttribute(
+        "aria-label",
+        `Go to slide ${index + 1}`
+    );
+
+    dot.addEventListener("click", () => {
+
+        card.scrollIntoView({
+            behavior: "smooth",
+            block: "nearest",
+            inline: "start"
+        });
+
+    });
+
+    mediaDots.appendChild(dot);
+
+});
+
+
+const dots =
+    mediaDots.querySelectorAll(".media-dot");
+
+
+/* =========================================
+   ACTIVE DOT
+========================================= */
+
+function updateMediaDots() {
+
+    const trackLeft =
+        mediaTrack.getBoundingClientRect().left;
+
+    let closestIndex = 0;
+
+    let closestDistance = Infinity;
+
+
+    mediaCards.forEach((card, index) => {
+
+        const distance =
+            Math.abs(
+                card.getBoundingClientRect().left -
+                trackLeft
+            );
+
+        if (distance < closestDistance) {
+
+            closestDistance = distance;
+
+            closestIndex = index;
+
+        }
+
+    });
+
+
+    dots.forEach((dot, index) => {
+
+        dot.classList.toggle(
+            "active",
+            index === closestIndex
+        );
+
+    });
+
+}
+
+
+mediaTrack.addEventListener(
+    "scroll",
+    updateMediaDots,
+    {
+        passive: true
+    }
+);
+
+
+/* =========================================
+   ARROWS
+========================================= */
+
+function slideMedia(direction) {
+
+    const cardWidth =
+        mediaCards[0].offsetWidth;
+
+    const gap = 22;
+
+    mediaTrack.scrollBy({
+
+        left:
+            direction *
+            (cardWidth + gap),
+
+        behavior: "smooth"
+
+    });
+
+}
+
+
+mediaPrev.addEventListener(
+    "click",
+    () => slideMedia(-1)
+);
+
+
+mediaNext.addEventListener(
+    "click",
+    () => slideMedia(1)
+);
+
+
+/* =========================================
+   INITIAL DOT
+========================================= */
+
+updateMediaDots();
