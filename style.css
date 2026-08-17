@@ -960,31 +960,29 @@ footer * {
 
 
 
+
 /* =========================================
    HERO SECTION
 ========================================= */
 
 .hero {
     min-height: calc(100vh - 20px);
-
     position: relative;
-
     overflow: hidden;
 
     display: flex;
-
     align-items: center;
 
     background:
         radial-gradient(
             circle at 78% 42%,
-            rgba(255, 190, 70, .16),
-            transparent 26%
+            rgba(255, 210, 100, .20),
+            transparent 27%
         ),
         radial-gradient(
-            circle at 15% 85%,
-            rgba(75, 0, 35, .35),
-            transparent 35%
+            circle at 12% 88%,
+            rgba(55, 0, 25, .35),
+            transparent 36%
         ),
         linear-gradient(
             135deg,
@@ -993,7 +991,7 @@ footer * {
             #70002F 100%
         );
 
-    color: white;
+    color: #fff;
 
     padding: 90px 0 0;
 }
@@ -1004,27 +1002,32 @@ footer * {
 ========================================= */
 
 .hero-grid {
-
     position: absolute;
-
     inset: 0;
 
-    opacity: .12;
+    opacity: .10;
 
     background-image:
         linear-gradient(
-            rgba(255,255,255,.06) 1px,
+            rgba(255, 225, 170, .10) 1px,
             transparent 1px
         ),
         linear-gradient(
             90deg,
-            rgba(255,255,255,.06) 1px,
+            rgba(255, 225, 170, .10) 1px,
             transparent 1px
         );
 
     background-size: 70px 70px;
 
     mask-image:
+        linear-gradient(
+            to bottom,
+            black,
+            transparent 90%
+        );
+
+    -webkit-mask-image:
         linear-gradient(
             to bottom,
             black,
@@ -1038,7 +1041,6 @@ footer * {
 ========================================= */
 
 .hero-glow {
-
     position: absolute;
 
     border-radius: 50%;
@@ -1050,29 +1052,25 @@ footer * {
 
 
 .hero-glow-1 {
-
     width: 380px;
-
     height: 380px;
 
-    background: rgba(255, 205, 70, .18);
+    background:
+        rgba(255, 210, 100, .22);
 
     top: 15%;
-
     right: 12%;
 }
 
 
 .hero-glow-2 {
-
     width: 300px;
-
     height: 300px;
 
-    background: rgba(76, 0, 40, .35);
+    background:
+        rgba(70, 0, 35, .40);
 
     bottom: 0;
-
     left: 3%;
 }
 
@@ -1082,9 +1080,7 @@ footer * {
 ========================================= */
 
 .hero-container {
-
     position: relative;
-
     z-index: 2;
 
     width: min(1240px, calc(100% - 48px));
@@ -1102,7 +1098,6 @@ footer * {
     gap: 60px;
 
     padding-bottom: 110px;
-
 }
 
 
@@ -1111,28 +1106,20 @@ footer * {
 ========================================= */
 
 .hero-content {
-
     animation: heroContentIn 1s ease forwards;
-
 }
 
 
 @keyframes heroContentIn {
 
     from {
-
         opacity: 0;
-
         transform: translateY(30px);
-
     }
 
     to {
-
         opacity: 1;
-
         transform: translateY(0);
-
     }
 
 }
@@ -1143,7 +1130,6 @@ footer * {
 ========================================= */
 
 .hero-eyebrow {
-
     display: inline-flex;
 
     align-items: center;
@@ -1153,11 +1139,14 @@ footer * {
     padding: 8px 13px;
 
     border: 1px solid
-        rgba(201,164,92,.25);
+        rgba(255, 218, 130, .38);
 
     border-radius: 100px;
 
-    color: #d6c69f;
+    color: #f1d58d;
+
+    background:
+        rgba(255, 220, 140, .06);
 
     font-size: 9px;
 
@@ -1165,23 +1154,26 @@ footer * {
 
     margin-bottom: 25px;
 
+    box-shadow:
+        inset 0 0 15px
+        rgba(255, 210, 100, .04);
 }
 
 
 .eyebrow-dot {
-
     width: 6px;
-
     height: 6px;
 
-    background: #c9a45c;
+    background: #e6bd62;
 
     border-radius: 50%;
 
     box-shadow:
         0 0 0 5px
-        rgba(201,164,92,.08);
+        rgba(255, 210, 100, .10),
 
+        0 0 12px
+        rgba(255, 210, 100, .45);
 }
 
 
@@ -1190,7 +1182,6 @@ footer * {
 ========================================= */
 
 .hero h1 {
-
     margin: 0;
 
     font-size: clamp(
@@ -1205,25 +1196,34 @@ footer * {
 
     font-weight: 500;
 
+    color: #fff7ed;
+
+    text-shadow:
+        0 4px 30px
+        rgba(55, 0, 25, .18);
 }
 
 
 .hero h1 span {
-
     color: transparent;
 
     background:
         linear-gradient(
             110deg,
-            #b78d43,
-            #f0d38a,
-            #c39a51
+            #c79a48 0%,
+            #ffe5a0 45%,
+            #d3aa5b 70%,
+            #a87832 100%
         );
 
     -webkit-background-clip: text;
-
     background-clip: text;
 
+    filter:
+        drop-shadow(
+            0 5px 18px
+            rgba(255, 210, 100, .12)
+        );
 }
 
 
@@ -1232,17 +1232,15 @@ footer * {
 ========================================= */
 
 .hero-description {
-
     max-width: 590px;
 
     margin-top: 27px;
 
-    color: #aaa59c;
+    color: #f1dfe5;
 
     font-size: 15px;
 
     line-height: 1.8;
-
 }
 
 
@@ -1251,7 +1249,6 @@ footer * {
 ========================================= */
 
 .hero-buttons {
-
     display: flex;
 
     align-items: center;
@@ -1259,13 +1256,11 @@ footer * {
     gap: 12px;
 
     margin-top: 34px;
-
 }
 
 
 .hero-primary-btn,
 .hero-secondary-btn {
-
     min-height: 50px;
 
     display: inline-flex;
@@ -1285,67 +1280,72 @@ footer * {
     font-weight: 600;
 
     transition: .3s ease;
-
 }
 
 
 .hero-primary-btn {
+    background:
+        linear-gradient(
+            135deg,
+            #f1d58b,
+            #c79a48
+        );
 
-    background: #c9a45c;
+    color: #4b0023;
 
-    color: #17130d;
+    box-shadow:
+        0 10px 30px
+        rgba(80, 0, 35, .20),
 
+        inset 0 1px
+        rgba(255,255,255,.45);
 }
 
 
 .hero-primary-btn:hover {
-
     transform: translateY(-3px);
 
     box-shadow:
         0 15px 35px
-        rgba(201,164,92,.2);
+        rgba(70, 0, 30, .30),
 
+        0 0 25px
+        rgba(255, 210, 100, .15);
 }
 
 
 .hero-primary-btn span {
-
     font-size: 16px;
-
 }
 
 
 .hero-secondary-btn {
-
     border: 1px solid
-        rgba(255,255,255,.12);
+        rgba(255, 225, 170, .25);
 
-    color: #e3ddd2;
+    color: #fff1e0;
 
     background:
-        rgba(255,255,255,.025);
+        rgba(100, 0, 45, .22);
 
+    backdrop-filter: blur(10px);
 }
 
 
 .hero-secondary-btn:hover {
-
     background:
-        rgba(255,255,255,.06);
+        rgba(255, 220, 140, .08);
 
     border-color:
-        rgba(201,164,92,.35);
+        rgba(255, 215, 120, .50);
 
+    color: #ffe8b0;
 }
 
 
 .whatsapp-icon {
-
     font-size: 12px;
-
-    color: #79d17b;
-
+    color: #8ee39a;
 }
 
 
@@ -1354,86 +1354,74 @@ footer * {
 ========================================= */
 
 .hero-trust {
-
     display: flex;
 
     align-items: center;
 
     margin-top: 45px;
-
 }
 
 
 .trust-item {
-
     display: flex;
 
     align-items: center;
 
     gap: 9px;
-
 }
 
 
 .trust-item strong {
-
     display: block;
 
     font-size: 10px;
 
     font-weight: 500;
 
-    color: #e4ded3;
-
+    color: #fff0df;
 }
 
 
 .trust-item small {
-
     display: block;
 
     margin-top: 3px;
 
     font-size: 8px;
 
-    color: #79746c;
-
+    color: #e0bfc9;
 }
 
 
 .trust-icon {
-
     width: 30px;
-
     height: 30px;
 
     display: grid;
-
     place-items: center;
 
     border: 1px solid
-        rgba(201,164,92,.25);
+        rgba(255, 215, 120, .30);
 
     border-radius: 50%;
 
-    color: #d2b36d;
+    color: #f0ce7e;
+
+    background:
+        rgba(255, 210, 100, .05);
 
     font-size: 10px;
-
 }
 
 
 .trust-line {
-
     width: 1px;
-
     height: 28px;
 
     margin: 0 20px;
 
     background:
-        rgba(255,255,255,.1);
-
+        rgba(255, 225, 200, .20);
 }
 
 
@@ -1442,7 +1430,6 @@ footer * {
 ========================================= */
 
 .hero-visual {
-
     min-height: 560px;
 
     display: flex;
@@ -1452,7 +1439,6 @@ footer * {
     justify-content: center;
 
     position: relative;
-
 }
 
 
@@ -1461,7 +1447,6 @@ footer * {
 ========================================= */
 
 .gold-card {
-
     width: min(430px, 90%);
 
     min-height: 500px;
@@ -1469,7 +1454,7 @@ footer * {
     padding: 30px;
 
     border: 1px solid
-        rgba(201,164,92,.28);
+        rgba(255, 215, 120, .38);
 
     border-radius: 28px;
 
@@ -1484,105 +1469,102 @@ footer * {
     justify-content: space-between;
 
     background:
-
         linear-gradient(
             145deg,
-            rgba(255,255,255,.07),
-            rgba(255,255,255,.015)
+            rgba(255, 240, 205, .13),
+            rgba(112, 0, 47, .22)
         );
 
-    backdrop-filter: blur(12px);
+    backdrop-filter: blur(18px);
+
+    -webkit-backdrop-filter: blur(18px);
 
     box-shadow:
 
         0 40px 100px
-        rgba(0,0,0,.35),
+        rgba(55, 0, 25, .40),
+
+        0 0 50px
+        rgba(255, 210, 100, .07),
 
         inset 0 1px
-        rgba(255,255,255,.06);
+        rgba(255,255,255,.14);
 
     transform:
         perspective(1000px)
         rotateY(-7deg)
         rotateX(3deg);
 
-    animation: cardFloat 5s ease-in-out infinite;
-
+    animation:
+        cardFloat 5s ease-in-out infinite;
 }
 
 
 @keyframes cardFloat {
 
     0%,100% {
-
         transform:
             perspective(1000px)
             rotateY(-7deg)
             rotateX(3deg)
             translateY(0);
-
     }
 
     50% {
-
         transform:
             perspective(1000px)
             rotateY(-4deg)
             rotateX(1deg)
             translateY(-12px);
-
     }
 
 }
 
 
-/* CARD SHINE */
+/* =========================================
+   CARD SHINE
+========================================= */
 
 .gold-card::before {
-
     content: "";
 
     position: absolute;
 
     width: 160%;
-
     height: 80px;
 
     left: -40%;
-
     top: 45%;
 
     background:
         linear-gradient(
             90deg,
             transparent,
-            rgba(255,255,255,.07),
+            rgba(255, 235, 180, .12),
             transparent
         );
 
     transform: rotate(-25deg);
 
-    animation: cardShine 5s infinite;
+    animation:
+        cardShine 5s infinite;
 
+    pointer-events: none;
 }
 
 
 @keyframes cardShine {
 
     0%,45% {
-
         transform:
             translateX(-50%)
             rotate(-25deg);
-
     }
 
     70%,100% {
-
         transform:
             translateX(50%)
             rotate(-25deg);
-
     }
 
 }
@@ -1593,45 +1575,42 @@ footer * {
 ========================================= */
 
 .card-top {
-
     display: flex;
 
     justify-content: space-between;
 
     align-items: center;
 
-    color: #8e887e;
+    color: #e1bfc9;
 
     font-size: 8px;
 
     letter-spacing: 2px;
-
 }
 
 
 .live-status {
-
     display: flex;
 
     align-items: center;
 
     gap: 6px;
 
-    color: #aaa69d;
-
+    color: #f0d5dd;
 }
 
 
 .live-status i {
-
     width: 5px;
-
     height: 5px;
 
     border-radius: 50%;
 
-    background: #7acb76;
+    background: #8ee39a;
 
+    box-shadow:
+        0 0 10px
+        rgba(142, 227, 154, .55);
 }
 
 
@@ -1640,9 +1619,7 @@ footer * {
 ========================================= */
 
 .gold-symbol {
-
     width: 180px;
-
     height: 180px;
 
     margin: auto;
@@ -1650,7 +1627,6 @@ footer * {
     border-radius: 50%;
 
     display: grid;
-
     place-items: center;
 
     font-family: Georgia, serif;
@@ -1659,31 +1635,32 @@ footer * {
 
     font-weight: 400;
 
-    color: #1a150c;
+    color: #5a0029;
 
     background:
         radial-gradient(
             circle at 30% 25%,
-            #f4db9b,
-            #c39a50 55%,
-            #8b672e
+            #fff0b8 0%,
+            #f0ce78 30%,
+            #c39a50 60%,
+            #8a622b 100%
         );
 
     box-shadow:
 
         0 0 0 12px
-        rgba(201,164,92,.05),
+        rgba(255, 215, 120, .07),
 
         0 0 80px
-        rgba(201,164,92,.16);
+        rgba(255, 210, 100, .22),
 
-    position: relative;
-
+        inset
+        0 0 25px
+        rgba(255,255,255,.18);
 }
 
 
 .gold-symbol::after {
-
     content: "";
 
     position: absolute;
@@ -1691,10 +1668,9 @@ footer * {
     inset: 13px;
 
     border: 1px solid
-        rgba(255,255,255,.3);
+        rgba(255,255,255,.42);
 
     border-radius: 50%;
-
 }
 
 
@@ -1703,32 +1679,27 @@ footer * {
 ========================================= */
 
 .gold-info {
-
     text-align: center;
-
 }
 
 
 .gold-info span {
-
     display: block;
 
-    color: #817b71;
+    color: #e0bec8;
 
     font-size: 8px;
 
     letter-spacing: 3px;
-
 }
 
 
 .gold-info strong {
-
     display: block;
 
     margin-top: 7px;
 
-    color: #e5c981;
+    color: #f3d58b;
 
     font-size: 23px;
 
@@ -1736,6 +1707,9 @@ footer * {
 
     font-weight: 400;
 
+    text-shadow:
+        0 0 20px
+        rgba(255, 210, 100, .12);
 }
 
 
@@ -1744,14 +1718,17 @@ footer * {
 ========================================= */
 
 .gold-divider {
-
     height: 1px;
 
     background:
-        rgba(255,255,255,.08);
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(255, 215, 120, .25),
+            transparent
+        );
 
     margin: 25px 0;
-
 }
 
 
@@ -1760,41 +1737,36 @@ footer * {
 ========================================= */
 
 .valuation-row {
-
     display: grid;
 
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns:
+        1fr 1fr;
 
     gap: 15px;
-
 }
 
 
 .valuation-row small {
-
     display: block;
 
-    color: #777168;
+    color: #d4aeba;
 
     font-size: 8px;
 
     letter-spacing: 1px;
-
 }
 
 
 .valuation-row strong {
-
     display: block;
 
     margin-top: 7px;
 
-    color: #e3d7bc;
+    color: #fff0d2;
 
     font-size: 14px;
 
     font-weight: 400;
-
 }
 
 
@@ -1803,39 +1775,36 @@ footer * {
 ========================================= */
 
 .card-bottom {
-
     display: flex;
 
     justify-content: space-between;
 
     align-items: center;
 
-    color: #777168;
+    color: #d4aeba;
 
     font-size: 8px;
-
 }
 
 
 .card-arrow {
-
     width: 28px;
-
     height: 28px;
 
     border: 1px solid
-        rgba(201,164,92,.25);
+        rgba(255, 215, 120, .30);
 
     border-radius: 50%;
 
     display: grid;
-
     place-items: center;
 
-    color: #c9a45c;
+    color: #f0ce7e;
+
+    background:
+        rgba(255, 210, 100, .04);
 
     font-size: 13px;
-
 }
 
 
@@ -1844,44 +1813,36 @@ footer * {
 ========================================= */
 
 .visual-orbit {
-
     position: absolute;
 
     border: 1px solid
-        rgba(201,164,92,.09);
+        rgba(255, 215, 120, .13);
 
     border-radius: 50%;
 
     pointer-events: none;
-
 }
 
 
 .orbit-one {
-
     width: 500px;
-
     height: 500px;
 
     animation:
         orbitRotate 18s linear infinite;
-
 }
 
 
 .orbit-two {
-
     width: 620px;
-
     height: 620px;
 
     border-style: dashed;
 
-    opacity: .4;
+    opacity: .45;
 
     animation:
         orbitRotate 28s linear infinite reverse;
-
 }
 
 
@@ -1903,7 +1864,6 @@ footer * {
 ========================================= */
 
 .floating-badge {
-
     position: absolute;
 
     display: flex;
@@ -1917,105 +1877,91 @@ footer * {
     border-radius: 14px;
 
     background:
-        rgba(24,22,17,.9);
+        rgba(86, 0, 36, .78);
 
     border: 1px solid
-        rgba(201,164,92,.18);
+        rgba(255, 215, 120, .25);
 
     backdrop-filter: blur(15px);
 
+    -webkit-backdrop-filter: blur(15px);
+
     box-shadow:
         0 15px 35px
-        rgba(0,0,0,.2);
+        rgba(55, 0, 25, .28),
+
+        inset 0 1px
+        rgba(255,255,255,.07);
 
     animation:
         badgeFloat 4s ease-in-out infinite;
-
 }
 
 
 .badge-one {
-
     top: 90px;
-
     left: 0;
-
 }
 
 
 .badge-two {
-
     bottom: 90px;
-
     right: 0;
 
     animation-delay: 1.3s;
-
 }
 
 
 @keyframes badgeFloat {
 
     0%,100% {
-
         transform: translateY(0);
-
     }
 
     50% {
-
         transform: translateY(-9px);
-
     }
 
 }
 
 
 .badge-icon {
-
     width: 30px;
-
     height: 30px;
 
     display: grid;
-
     place-items: center;
 
     border-radius: 9px;
 
     background:
-        rgba(201,164,92,.09);
+        rgba(255, 210, 100, .09);
 
-    color: #d4b56e;
+    color: #f0ce7e;
 
     font-size: 9px;
-
 }
 
 
 .floating-badge strong {
-
     display: block;
 
-    color: #ddd6c9;
+    color: #fff0df;
 
     font-size: 10px;
 
     font-weight: 500;
-
 }
 
 
 .floating-badge small {
-
     display: block;
 
-    color: #777168;
+    color: #d5aebb;
 
     font-size: 8px;
 
     margin-top: 3px;
-
 }
 
 
@@ -2024,11 +1970,9 @@ footer * {
 ========================================= */
 
 .hero-marquee {
-
     position: absolute;
 
     bottom: 0;
-
     left: 0;
 
     width: 100%;
@@ -2036,21 +1980,23 @@ footer * {
     overflow: hidden;
 
     border-top:
-        1px solid rgba(255,255,255,.06);
+        1px solid
+        rgba(255, 225, 190, .13);
 
     border-bottom:
-        1px solid rgba(255,255,255,.06);
+        1px solid
+        rgba(255, 225, 190, .13);
 
     padding: 14px 0;
 
     background:
-        rgba(0,0,0,.12);
+        rgba(70, 0, 30, .22);
 
+    backdrop-filter: blur(8px);
 }
 
 
 .marquee-track {
-
     display: flex;
 
     align-items: center;
@@ -2061,29 +2007,24 @@ footer * {
 
     animation:
         marqueeMove 30s linear infinite;
-
 }
 
 
 .marquee-track span {
-
-    color: #79736a;
+    color: #e0bdc8;
 
     font-size: 8px;
 
     letter-spacing: 2.5px;
 
     white-space: nowrap;
-
 }
 
 
 .marquee-track b {
-
-    color: #c9a45c;
+    color: #f0ce7e;
 
     font-size: 9px;
-
 }
 
 
@@ -2107,7 +2048,6 @@ footer * {
 @media (max-width: 1050px) {
 
     .hero-container {
-
         grid-template-columns: 1fr;
 
         text-align: center;
@@ -2115,39 +2055,30 @@ footer * {
         gap: 30px;
 
         padding-top: 50px;
-
     }
 
 
     .hero-content {
-
         display: flex;
 
         flex-direction: column;
 
         align-items: center;
-
     }
 
 
     .hero-description {
-
         max-width: 650px;
-
     }
 
 
     .hero-trust {
-
         justify-content: center;
-
     }
 
 
     .hero-visual {
-
         min-height: 500px;
-
     }
 
 }
@@ -2160,38 +2091,31 @@ footer * {
 @media (max-width: 600px) {
 
     .hero {
-
         min-height: auto;
 
         padding-top: 80px;
-
     }
 
 
     .hero-container {
-
         width: calc(100% - 30px);
 
         padding-bottom: 80px;
 
         gap: 10px;
-
     }
 
 
     .hero-eyebrow {
-
         font-size: 7px;
 
         letter-spacing: 2px;
 
         margin-bottom: 20px;
-
     }
 
 
     .hero h1 {
-
         font-size: clamp(
             44px,
             13vw,
@@ -2199,101 +2123,78 @@ footer * {
         );
 
         letter-spacing: -3px;
-
     }
 
 
     .hero-description {
-
         font-size: 13px;
 
         line-height: 1.7;
 
         margin-top: 22px;
-
     }
 
 
     .hero-buttons {
-
         width: 100%;
 
         flex-direction: column;
 
         margin-top: 28px;
-
     }
 
 
     .hero-primary-btn,
     .hero-secondary-btn {
-
         width: 100%;
-
     }
 
 
     .hero-trust {
-
         width: 100%;
 
         justify-content: space-between;
 
         margin-top: 35px;
-
     }
 
 
     .trust-line {
-
         margin: 0 8px;
-
     }
 
 
     .trust-item {
-
         gap: 6px;
-
     }
 
 
     .trust-item strong {
-
         font-size: 8px;
-
     }
 
 
     .trust-item small {
-
         font-size: 7px;
-
     }
 
 
     .trust-icon {
-
         width: 26px;
-
         height: 26px;
 
         font-size: 8px;
-
     }
 
 
     .hero-visual {
-
         min-height: 440px;
 
         margin-top: 10px;
-
     }
 
 
     .gold-card {
-
         width: 82%;
 
         min-height: 400px;
@@ -2301,91 +2202,64 @@ footer * {
         padding: 22px;
 
         border-radius: 23px;
-
     }
 
 
     .gold-symbol {
-
         width: 135px;
-
         height: 135px;
 
         font-size: 55px;
-
     }
 
 
     .gold-info strong {
-
         font-size: 18px;
-
     }
 
 
     .orbit-one {
-
         width: 380px;
-
         height: 380px;
-
     }
 
 
     .orbit-two {
-
         width: 460px;
-
         height: 460px;
-
     }
 
 
     .floating-badge {
-
         padding: 9px 11px;
-
     }
 
 
     .badge-one {
-
         left: -2px;
-
         top: 60px;
-
     }
 
 
     .badge-two {
-
         right: -2px;
-
         bottom: 60px;
-
     }
 
 
     .floating-badge strong {
-
         font-size: 8px;
-
     }
 
 
     .floating-badge small {
-
         font-size: 7px;
-
     }
 
 
     .badge-icon {
-
         width: 26px;
-
         height: 26px;
-
     }
 
 }
@@ -2398,37 +2272,31 @@ footer * {
 @media (max-width: 380px) {
 
     .hero h1 {
-
         font-size: 42px;
-
     }
 
 
     .hero-trust {
-
         transform: scale(.9);
 
         width: 110%;
 
         margin-left: -5%;
-
     }
 
 
     .gold-card {
-
         width: 78%;
-
     }
 
 
     .floating-badge {
-
         transform: scale(.85);
-
     }
 
 }
+
+
 
 
 
