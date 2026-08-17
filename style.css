@@ -24,6 +24,30 @@ a {
 
 
 
+
+
+
+
+.hero,
+.hero h1,
+.hero p,
+.hero a,
+.hero span,
+.hero strong,
+.hero small {
+    letter-spacing: 0 !important;
+    word-spacing: 0 !important;
+}
+
+
+
+
+
+
+
+
+
+
 /* =========================================
    ENGLISH TYPOGRAPHY
 ========================================= */
