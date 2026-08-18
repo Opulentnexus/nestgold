@@ -1217,25 +1217,19 @@ footer * {
     background:
         radial-gradient(
             circle at 78% 35%,
-            rgba(212, 170, 75, 0.20),
+            rgba(255, 225, 145, .32),
             transparent 28%
         ),
         radial-gradient(
-            circle at 10% 85%,
-            rgba(92, 18, 28, 0.35),
+            circle at 15% 85%,
+            rgba(255, 120, 180, .25),
             transparent 35%
-        ),
-        radial-gradient(
-            circle at 55% 110%,
-            rgba(168, 120, 35, 0.12),
-            transparent 40%
         ),
         linear-gradient(
             135deg,
-            #080705 0%,
-            #17120b 42%,
-            #24160d 72%,
-            #0b0906 100%
+            #c2185b 0%,
+            #d81b60 48%,
+            #ad1457 100%
         );
 
     color: #fff;
