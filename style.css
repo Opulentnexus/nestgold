@@ -94,6 +94,51 @@ body {
 
 
 
+/* =========================================
+   HERO - MALAYALAM FONT
+========================================= */
+
+.hero .hero-eyebrow {
+    font-family: "Manjari", sans-serif !important;
+}
+
+.hero h1 {
+    font-family: "Manjari", sans-serif !important;
+}
+
+.hero .hero-description {
+    font-family: "Manjari", sans-serif !important;
+}
+
+.hero .hero-primary-btn,
+.hero .hero-secondary-btn {
+    font-family: "Manjari", sans-serif !important;
+}
+
+.hero .hero-trust {
+    font-family: "Manjari", sans-serif !important;
+}
+
+.hero .gold-card {
+    font-family: "Manjari", sans-serif !important;
+}
+
+.hero .floating-badge {
+    font-family: "Manjari", sans-serif !important;
+}
+
+.hero .hero-marquee {
+    font-family: "Manjari", sans-serif !important;
+}
+
+
+
+
+
+
+
+
+
 
 
 
