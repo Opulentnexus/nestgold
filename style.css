@@ -1203,7 +1203,7 @@ footer * {
 
 
 /* =========================================
-   HERO SECTION
+   HERO SECTION — PREMIUM GOLD
 ========================================= */
 
 .hero {
@@ -1216,20 +1216,26 @@ footer * {
 
     background:
         radial-gradient(
-            circle at 78% 42%,
-            rgba(255, 210, 100, .20),
-            transparent 27%
+            circle at 78% 35%,
+            rgba(212, 170, 75, 0.20),
+            transparent 28%
         ),
         radial-gradient(
-            circle at 12% 88%,
-            rgba(55, 0, 25, .35),
-            transparent 36%
+            circle at 10% 85%,
+            rgba(92, 18, 28, 0.35),
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at 55% 110%,
+            rgba(168, 120, 35, 0.12),
+            transparent 40%
         ),
         linear-gradient(
             135deg,
-            #AD0450 0%,
-            #96033F 48%,
-            #70002F 100%
+            #080705 0%,
+            #17120b 42%,
+            #24160d 72%,
+            #0b0906 100%
         );
 
     color: #fff;
@@ -1250,12 +1256,12 @@ footer * {
 
     background-image:
         linear-gradient(
-            rgba(255, 225, 170, .10) 1px,
+            rgba(230, 195, 115, .13) 1px,
             transparent 1px
         ),
         linear-gradient(
             90deg,
-            rgba(255, 225, 170, .10) 1px,
+            rgba(230, 195, 115, .13) 1px,
             transparent 1px
         );
 
@@ -1286,33 +1292,37 @@ footer * {
 
     border-radius: 50%;
 
-    filter: blur(90px);
+    filter: blur(100px);
 
     pointer-events: none;
 }
 
 
+/* GOLD GLOW */
+
 .hero-glow-1 {
-    width: 380px;
-    height: 380px;
+    width: 420px;
+    height: 420px;
 
     background:
-        rgba(255, 210, 100, .22);
+        rgba(218, 173, 69, .20);
 
-    top: 15%;
-    right: 12%;
+    top: 8%;
+    right: 8%;
 }
 
 
+/* DARK WARM GLOW */
+
 .hero-glow-2 {
-    width: 300px;
-    height: 300px;
+    width: 340px;
+    height: 340px;
 
     background:
-        rgba(70, 0, 35, .40);
+        rgba(105, 22, 30, .28);
 
-    bottom: 0;
-    left: 3%;
+    bottom: -5%;
+    left: 0;
 }
 
 
@@ -1347,7 +1357,8 @@ footer * {
 ========================================= */
 
 .hero-content {
-    animation: heroContentIn 1s ease forwards;
+    animation:
+        heroContentIn 1s ease forwards;
 }
 
 
@@ -1377,17 +1388,17 @@ footer * {
 
     gap: 9px;
 
-    padding: 8px 13px;
+    padding: 8px 14px;
 
     border: 1px solid
-        rgba(255, 218, 130, .38);
+        rgba(226, 188, 99, .48);
 
     border-radius: 100px;
 
-    color: #f1d58d;
+    color: #e8c875;
 
     background:
-        rgba(255, 220, 140, .06);
+        rgba(212, 170, 75, .07);
 
     font-size: 9px;
 
@@ -1396,25 +1407,32 @@ footer * {
     margin-bottom: 25px;
 
     box-shadow:
-        inset 0 0 15px
-        rgba(255, 210, 100, .04);
+        inset 0 0 18px
+        rgba(225, 187, 91, .04),
+
+        0 0 25px
+        rgba(211, 169, 69, .04);
 }
 
+
+/* =========================================
+   EYEBROW DOT
+========================================= */
 
 .eyebrow-dot {
     width: 6px;
     height: 6px;
 
-    background: #e6bd62;
+    background: #e5bc63;
 
     border-radius: 50%;
 
     box-shadow:
         0 0 0 5px
-        rgba(255, 210, 100, .10),
+        rgba(226, 186, 91, .10),
 
-        0 0 12px
-        rgba(255, 210, 100, .45);
+        0 0 14px
+        rgba(226, 186, 91, .65);
 }
 
 
@@ -1437,13 +1455,15 @@ footer * {
 
     font-weight: 500;
 
-    color: #fff7ed;
+    color: #fffdf7;
 
     text-shadow:
-        0 4px 30px
-        rgba(55, 0, 25, .18);
+        0 4px 35px
+        rgba(0, 0, 0, .30);
 }
 
+
+/* GOLD TEXT */
 
 .hero h1 span {
     color: transparent;
@@ -1451,10 +1471,11 @@ footer * {
     background:
         linear-gradient(
             110deg,
-            #c79a48 0%,
-            #ffe5a0 45%,
-            #d3aa5b 70%,
-            #a87832 100%
+            #9b6c22 0%,
+            #d6ad58 22%,
+            #ffe6a0 45%,
+            #d4a94f 67%,
+            #9b6a20 100%
         );
 
     -webkit-background-clip: text;
@@ -1462,8 +1483,8 @@ footer * {
 
     filter:
         drop-shadow(
-            0 5px 18px
-            rgba(255, 210, 100, .12)
+            0 5px 20px
+            rgba(226, 182, 75, .18)
         );
 }
 
@@ -1477,7 +1498,7 @@ footer * {
 
     margin-top: 27px;
 
-    color: #f1dfe5;
+    color: #d8d0c3;
 
     font-size: 15px;
 
@@ -1512,7 +1533,7 @@ footer * {
 
     gap: 10px;
 
-    padding: 0 20px;
+    padding: 0 21px;
 
     border-radius: 100px;
 
@@ -1520,26 +1541,41 @@ footer * {
 
     font-weight: 600;
 
-    transition: .3s ease;
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        background .3s ease,
+        border-color .3s ease;
 }
 
+
+/* =========================================
+   PRIMARY GOLD BUTTON
+========================================= */
 
 .hero-primary-btn {
     background:
         linear-gradient(
             135deg,
-            #f1d58b,
-            #c79a48
+            #f1d58a 0%,
+            #d2a94f 45%,
+            #a87829 100%
         );
 
-    color: #4b0023;
+    color: #171008;
+
+    border: 1px solid
+        rgba(255, 232, 166, .55);
 
     box-shadow:
-        0 10px 30px
-        rgba(80, 0, 35, .20),
+        0 12px 30px
+        rgba(0, 0, 0, .28),
+
+        0 0 30px
+        rgba(213, 169, 70, .10),
 
         inset 0 1px
-        rgba(255,255,255,.45);
+        rgba(255,255,255,.55);
 }
 
 
@@ -1547,11 +1583,14 @@ footer * {
     transform: translateY(-3px);
 
     box-shadow:
-        0 15px 35px
-        rgba(70, 0, 30, .30),
+        0 17px 38px
+        rgba(0, 0, 0, .38),
 
-        0 0 25px
-        rgba(255, 210, 100, .15);
+        0 0 35px
+        rgba(221, 181, 83, .18),
+
+        inset 0 1px
+        rgba(255,255,255,.65);
 }
 
 
@@ -1560,33 +1599,44 @@ footer * {
 }
 
 
+/* =========================================
+   SECONDARY BUTTON
+========================================= */
+
 .hero-secondary-btn {
     border: 1px solid
-        rgba(255, 225, 170, .25);
+        rgba(220, 183, 96, .35);
 
-    color: #fff1e0;
+    color: #eadfcf;
 
     background:
-        rgba(100, 0, 45, .22);
+        rgba(255, 255, 255, .035);
 
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(12px);
+
+    -webkit-backdrop-filter: blur(12px);
 }
 
 
 .hero-secondary-btn:hover {
     background:
-        rgba(255, 220, 140, .08);
+        rgba(218, 177, 80, .08);
 
     border-color:
-        rgba(255, 215, 120, .50);
+        rgba(232, 195, 111, .65);
 
-    color: #ffe8b0;
+    color: #f5d98d;
+
+    box-shadow:
+        0 0 25px
+        rgba(218, 176, 73, .08);
 }
 
 
 .whatsapp-icon {
     font-size: 12px;
-    color: #8ee39a;
+
+    color: #8fe39a;
 }
 
 
@@ -1619,7 +1669,7 @@ footer * {
 
     font-weight: 500;
 
-    color: #fff0df;
+    color: #f3eadb;
 }
 
 
@@ -1630,7 +1680,7 @@ footer * {
 
     font-size: 8px;
 
-    color: #e0bfc9;
+    color: #a99d8b;
 }
 
 
@@ -1639,19 +1689,24 @@ footer * {
     height: 30px;
 
     display: grid;
+
     place-items: center;
 
     border: 1px solid
-        rgba(255, 215, 120, .30);
+        rgba(221, 183, 91, .38);
 
     border-radius: 50%;
 
-    color: #f0ce7e;
+    color: #e3bd67;
 
     background:
-        rgba(255, 210, 100, .05);
+        rgba(216, 172, 69, .06);
 
     font-size: 10px;
+
+    box-shadow:
+        0 0 18px
+        rgba(214, 170, 69, .05);
 }
 
 
@@ -1662,7 +1717,12 @@ footer * {
     margin: 0 20px;
 
     background:
-        rgba(255, 225, 200, .20);
+        linear-gradient(
+            to bottom,
+            transparent,
+            rgba(218, 181, 96, .45),
+            transparent
+        );
 }
 
 
@@ -1695,7 +1755,7 @@ footer * {
     padding: 30px;
 
     border: 1px solid
-        rgba(255, 215, 120, .38);
+        rgba(222, 181, 83, .50);
 
     border-radius: 28px;
 
@@ -1712,24 +1772,28 @@ footer * {
     background:
         linear-gradient(
             145deg,
-            rgba(255, 240, 205, .13),
-            rgba(112, 0, 47, .22)
+            rgba(255, 225, 150, .09),
+            rgba(255, 255, 255, .025) 35%,
+            rgba(90, 17, 24, .20) 100%
         );
 
-    backdrop-filter: blur(18px);
+    backdrop-filter: blur(20px);
 
-    -webkit-backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(20px);
 
     box-shadow:
 
         0 40px 100px
-        rgba(55, 0, 25, .40),
+        rgba(0, 0, 0, .60),
 
-        0 0 50px
-        rgba(255, 210, 100, .07),
+        0 0 70px
+        rgba(215, 173, 74, .08),
 
         inset 0 1px
-        rgba(255,255,255,.14);
+        rgba(255, 235, 181, .20),
+
+        inset 0 0 40px
+        rgba(218, 177, 80, .025);
 
     transform:
         perspective(1000px)
@@ -1772,16 +1836,18 @@ footer * {
     position: absolute;
 
     width: 160%;
+
     height: 80px;
 
     left: -40%;
+
     top: 45%;
 
     background:
         linear-gradient(
             90deg,
             transparent,
-            rgba(255, 235, 180, .12),
+            rgba(255, 230, 160, .16),
             transparent
         );
 
@@ -1822,7 +1888,7 @@ footer * {
 
     align-items: center;
 
-    color: #e1bfc9;
+    color: #b9aa93;
 
     font-size: 8px;
 
@@ -1837,7 +1903,7 @@ footer * {
 
     gap: 6px;
 
-    color: #f0d5dd;
+    color: #d8cdbd;
 }
 
 
@@ -1847,11 +1913,11 @@ footer * {
 
     border-radius: 50%;
 
-    background: #8ee39a;
+    background: #8fe39a;
 
     box-shadow:
         0 0 10px
-        rgba(142, 227, 154, .55);
+        rgba(142, 227, 154, .65);
 }
 
 
@@ -1868,6 +1934,7 @@ footer * {
     border-radius: 50%;
 
     display: grid;
+
     place-items: center;
 
     font-family: Georgia, serif;
@@ -1876,28 +1943,35 @@ footer * {
 
     font-weight: 400;
 
-    color: #5a0029;
+    color: #3c270b;
 
     background:
         radial-gradient(
             circle at 30% 25%,
-            #fff0b8 0%,
-            #f0ce78 30%,
-            #c39a50 60%,
-            #8a622b 100%
+            #fff4c7 0%,
+            #f5d985 28%,
+            #d3aa55 57%,
+            #a97728 78%,
+            #76501b 100%
         );
+
+    border: 1px solid
+        rgba(255, 235, 168, .75);
 
     box-shadow:
 
         0 0 0 12px
-        rgba(255, 215, 120, .07),
+        rgba(222, 183, 89, .07),
 
         0 0 80px
-        rgba(255, 210, 100, .22),
+        rgba(222, 178, 70, .24),
+
+        0 20px 45px
+        rgba(0, 0, 0, .35),
 
         inset
         0 0 25px
-        rgba(255,255,255,.18);
+        rgba(255,255,255,.20);
 }
 
 
@@ -1909,7 +1983,7 @@ footer * {
     inset: 13px;
 
     border: 1px solid
-        rgba(255,255,255,.42);
+        rgba(255,255,255,.48);
 
     border-radius: 50%;
 }
@@ -1927,7 +2001,7 @@ footer * {
 .gold-info span {
     display: block;
 
-    color: #e0bec8;
+    color: #aa9b87;
 
     font-size: 8px;
 
@@ -1940,7 +2014,7 @@ footer * {
 
     margin-top: 7px;
 
-    color: #f3d58b;
+    color: #e9c86f;
 
     font-size: 23px;
 
@@ -1949,8 +2023,8 @@ footer * {
     font-weight: 400;
 
     text-shadow:
-        0 0 20px
-        rgba(255, 210, 100, .12);
+        0 0 22px
+        rgba(226, 181, 73, .18);
 }
 
 
@@ -1965,7 +2039,7 @@ footer * {
         linear-gradient(
             90deg,
             transparent,
-            rgba(255, 215, 120, .25),
+            rgba(221, 182, 91, .38),
             transparent
         );
 
@@ -1990,7 +2064,7 @@ footer * {
 .valuation-row small {
     display: block;
 
-    color: #d4aeba;
+    color: #a99b88;
 
     font-size: 8px;
 
@@ -2003,7 +2077,7 @@ footer * {
 
     margin-top: 7px;
 
-    color: #fff0d2;
+    color: #eee2cb;
 
     font-size: 14px;
 
@@ -2022,7 +2096,7 @@ footer * {
 
     align-items: center;
 
-    color: #d4aeba;
+    color: #a99b88;
 
     font-size: 8px;
 }
@@ -2033,17 +2107,18 @@ footer * {
     height: 28px;
 
     border: 1px solid
-        rgba(255, 215, 120, .30);
+        rgba(221, 182, 91, .40);
 
     border-radius: 50%;
 
     display: grid;
+
     place-items: center;
 
-    color: #f0ce7e;
+    color: #e2bd68;
 
     background:
-        rgba(255, 210, 100, .04);
+        rgba(215, 172, 69, .05);
 
     font-size: 13px;
 }
@@ -2057,7 +2132,7 @@ footer * {
     position: absolute;
 
     border: 1px solid
-        rgba(255, 215, 120, .13);
+        rgba(225, 185, 93, .18);
 
     border-radius: 50%;
 
@@ -2080,7 +2155,10 @@ footer * {
 
     border-style: dashed;
 
-    opacity: .45;
+    border-color:
+        rgba(225, 185, 93, .12);
+
+    opacity: .55;
 
     animation:
         orbitRotate 28s linear infinite reverse;
@@ -2118,21 +2196,25 @@ footer * {
     border-radius: 14px;
 
     background:
-        rgba(86, 0, 36, .78);
+        rgba(16, 12, 8, .82);
 
     border: 1px solid
-        rgba(255, 215, 120, .25);
+        rgba(221, 181, 89, .35);
 
-    backdrop-filter: blur(15px);
+    backdrop-filter: blur(16px);
 
-    -webkit-backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(16px);
 
     box-shadow:
+
         0 15px 35px
-        rgba(55, 0, 25, .28),
+        rgba(0, 0, 0, .40),
+
+        0 0 25px
+        rgba(216, 173, 69, .05),
 
         inset 0 1px
-        rgba(255,255,255,.07);
+        rgba(255,255,255,.08);
 
     animation:
         badgeFloat 4s ease-in-out infinite;
@@ -2141,12 +2223,14 @@ footer * {
 
 .badge-one {
     top: 90px;
+
     left: 0;
 }
 
 
 .badge-two {
     bottom: 90px;
+
     right: 0;
 
     animation-delay: 1.3s;
@@ -2171,23 +2255,27 @@ footer * {
     height: 30px;
 
     display: grid;
+
     place-items: center;
 
     border-radius: 9px;
 
     background:
-        rgba(255, 210, 100, .09);
+        rgba(218, 176, 73, .08);
 
-    color: #f0ce7e;
+    color: #e1bd69;
 
     font-size: 9px;
+
+    border: 1px solid
+        rgba(220, 179, 82, .12);
 }
 
 
 .floating-badge strong {
     display: block;
 
-    color: #fff0df;
+    color: #f0e5d2;
 
     font-size: 10px;
 
@@ -2198,7 +2286,7 @@ footer * {
 .floating-badge small {
     display: block;
 
-    color: #d5aebb;
+    color: #a99a85;
 
     font-size: 8px;
 
@@ -2214,6 +2302,7 @@ footer * {
     position: absolute;
 
     bottom: 0;
+
     left: 0;
 
     width: 100%;
@@ -2222,18 +2311,18 @@ footer * {
 
     border-top:
         1px solid
-        rgba(255, 225, 190, .13);
+        rgba(221, 183, 95, .22);
 
     border-bottom:
         1px solid
-        rgba(255, 225, 190, .13);
+        rgba(221, 183, 95, .22);
 
     padding: 14px 0;
 
     background:
-        rgba(70, 0, 30, .22);
+        rgba(8, 6, 4, .48);
 
-    backdrop-filter: blur(8px);
+    backdrop-filter: blur(10px);
 }
 
 
@@ -2252,7 +2341,7 @@ footer * {
 
 
 .marquee-track span {
-    color: #e0bdc8;
+    color: #a99b87;
 
     font-size: 8px;
 
@@ -2263,7 +2352,7 @@ footer * {
 
 
 .marquee-track b {
-    color: #f0ce7e;
+    color: #dfba63;
 
     font-size: 9px;
 }
@@ -2478,12 +2567,14 @@ footer * {
 
     .badge-one {
         left: -2px;
+
         top: 60px;
     }
 
 
     .badge-two {
         right: -2px;
+
         bottom: 60px;
     }
 
@@ -2536,7 +2627,6 @@ footer * {
     }
 
 }
-
 
 
 
