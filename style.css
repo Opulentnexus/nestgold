@@ -58,6 +58,45 @@ a {
 
 
 
+
+/* =========================================
+   MALAYALAM FONT — MANJARI
+========================================= */
+
+body {
+    font-family: "DM Sans", sans-serif;
+}
+
+/* All Malayalam content */
+.hero,
+.about-section,
+.process-section,
+.services-section,
+.trust-section,
+.faq-section {
+
+    font-family: "Manjari", sans-serif;
+}
+
+
+/* Keep English elements in DM Sans */
+.hero .hero-primary-btn,
+.hero .hero-secondary-btn,
+.contact-section,
+.site-header,
+.site-footer {
+
+    font-family: "DM Sans", sans-serif;
+}
+
+
+
+
+
+
+
+
+
 /* =========================================
    ENGLISH TYPOGRAPHY
 ========================================= */
