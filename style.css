@@ -45,7 +45,14 @@ a {
 
 
 
-
+.about-section,
+.services-section,
+.valuation-section,
+.how-it-works-section,
+.faq-section,
+.testimonials-section {
+    font-family: "Noto Sans Malayalam", sans-serif;
+}
 
 
 
