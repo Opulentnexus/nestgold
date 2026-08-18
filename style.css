@@ -51,7 +51,8 @@ a {
 .how-it-works-section,
 .faq-section,
 .testimonials-section {
-    font-family: "Noto Sans Malayalam", sans-serif;
+    font-family: "Manjari", sans-serif;
+    font-weight: 700;
 }
 
 
