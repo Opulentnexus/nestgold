@@ -145,6 +145,152 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   UNIVERSAL MALAYALAM TYPOGRAPHY FIX
+   Add this at the VERY END of your CSS
+========================================================= */
+
+/* Malayalam sections */
+.hero,
+.about-section,
+.services-section,
+.valuation-section,
+.how-it-works-section,
+.process-section,
+.trust-section,
+.testimonials-section,
+.faq-section,
+.gold-info {
+
+    font-family: "Manjari", sans-serif;
+}
+
+
+/* All text elements inside Malayalam sections */
+.hero *,
+.about-section *,
+.services-section *,
+.valuation-section *,
+.how-it-works-section *,
+.process-section *,
+.trust-section *,
+.testimonials-section *,
+.faq-section *,
+.gold-info * {
+
+    letter-spacing: 0 !important;
+    word-spacing: 0 !important;
+}
+
+
+/* Malayalam headings */
+.hero h1,
+.hero h2,
+.hero h3,
+.about-section h1,
+.about-section h2,
+.about-section h3,
+.services-section h1,
+.services-section h2,
+.services-section h3,
+.valuation-section h1,
+.valuation-section h2,
+.valuation-section h3,
+.how-it-works-section h1,
+.how-it-works-section h2,
+.how-it-works-section h3,
+.process-section h1,
+.process-section h2,
+.process-section h3,
+.trust-section h1,
+.trust-section h2,
+.trust-section h3,
+.testimonials-section h1,
+.testimonials-section h2,
+.testimonials-section h3,
+.faq-section h1,
+.faq-section h2,
+.faq-section h3 {
+
+    font-family: "Manjari", sans-serif !important;
+
+    letter-spacing: 0 !important;
+    word-spacing: 0 !important;
+}
+
+
+/* Malayalam paragraphs, spans, labels, buttons */
+.hero p,
+.hero span,
+.hero strong,
+.hero small,
+.about-section p,
+.about-section span,
+.about-section strong,
+.about-section small,
+.services-section p,
+.services-section span,
+.services-section strong,
+.services-section small,
+.valuation-section p,
+.valuation-section span,
+.valuation-section strong,
+.valuation-section small,
+.how-it-works-section p,
+.how-it-works-section span,
+.how-it-works-section strong,
+.how-it-works-section small,
+.process-section p,
+.process-section span,
+.process-section strong,
+.process-section small,
+.trust-section p,
+.trust-section span,
+.trust-section strong,
+.trust-section small,
+.testimonials-section p,
+.testimonials-section span,
+.testimonials-section strong,
+.testimonials-section small,
+.faq-section p,
+.faq-section span,
+.faq-section strong,
+.faq-section small,
+.gold-info span,
+.gold-info strong {
+
+    font-family: "Manjari", sans-serif !important;
+
+    letter-spacing: 0 !important;
+    word-spacing: 0 !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* =========================================
    ENGLISH TYPOGRAPHY
 ========================================= */
