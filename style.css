@@ -123,7 +123,22 @@ body {
 
 
 
+/* =========================================
+   MALAYALAM SPACING FIX
+========================================= */
 
+.hero h1,
+.hero-description,
+.about-section,
+.services-section,
+.valuation-section,
+.how-it-works-section,
+.faq-section,
+.testimonials-section {
+    letter-spacing: 0 !important;
+    word-spacing: 0 !important;
+    text-align: left;
+}
 
 
 
