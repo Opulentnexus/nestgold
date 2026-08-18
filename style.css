@@ -28,19 +28,7 @@ a {
 
 
 
-.hero {
-    font-family: "Noto Sans Malayalam", sans-serif;
-}
 
-.hero h1,
-.hero p,
-.hero a,
-.hero span,
-.hero strong,
-.hero small {
-    letter-spacing: 0 !important;
-    word-spacing: normal !important;
-}
 
 
 
