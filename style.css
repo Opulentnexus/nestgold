@@ -1170,6 +1170,27 @@ footer * {
 }
 
 
+
+
+
+
+.hero h1 {
+    font-family: "Anek Malayalam", sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* =========================================
    HERO SECTION
 ========================================= */
@@ -2690,6 +2711,759 @@ footer * {
     }
 
 }
+
+
+
+
+
+
+
+/* =========================================================
+   NEST GOLD HERO — COMPACT BUT READABLE
+========================================================= */
+
+
+/* MAIN STATEMENT */
+.hero-main-description {
+    max-width: 680px;
+    margin-top: 15px;
+
+    font-size: 18px;
+    line-height: 1.55;
+}
+
+.hero-main-description strong {
+    color: #efca6c;
+    font-weight: 800;
+}
+
+
+/* INTRO */
+.hero-intro {
+    max-width: 650px;
+    margin-top: 8px;
+
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.hero-intro strong {
+    color: #efca6c;
+    font-weight: 750;
+}
+
+
+/* DETAIL EXPLANATION */
+.hero-detail-text {
+    max-width: 680px;
+
+    margin-top: 10px;
+    padding: 9px 12px;
+
+    border-left: 2px solid rgba(220,174,72,.55);
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(220,174,72,.055),
+            transparent
+        );
+
+    border-radius: 0 9px 9px 0;
+}
+
+.hero-detail-text p {
+    margin: 0;
+
+    font-size: 12px;
+    line-height: 1.6;
+
+    color: #d0b8c1;
+}
+
+.hero-detail-text strong {
+    color: #eac66b;
+}
+
+
+/* EVALUATION TITLE */
+.hero-evaluation-title {
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    margin-top: 14px;
+    margin-bottom: 8px;
+}
+
+.title-line {
+    width: 23px;
+    height: 2px;
+}
+
+.hero-evaluation-title h3 {
+    margin: 0;
+
+    font-size: 15px;
+    line-height: 1.35;
+
+    color: #f0ddd5;
+}
+
+.hero-evaluation-title h3 strong {
+    color: #efca6c;
+    font-weight: 800;
+}
+
+
+/* KARAT LIST */
+.karat-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 5px;
+
+    max-width: 680px;
+
+    margin-bottom: 9px;
+}
+
+.karat-list span {
+    min-height: 26px;
+
+    padding: 4px 8px;
+
+    display: inline-flex;
+    align-items: center;
+
+    border-radius: 30px;
+
+    font-size: 9px;
+    font-weight: 700;
+
+    color: #e9c76d;
+
+    background:
+        rgba(220,174,72,.07);
+
+    border:
+        1px solid rgba(220,174,72,.17);
+}
+
+
+/* EVALUATION GRID */
+.evaluation-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+
+    gap: 6px;
+
+    max-width: 680px;
+}
+
+
+/* EVALUATION ITEM */
+.evaluation-item {
+    display: flex;
+    align-items: center;
+
+    gap: 7px;
+
+    min-height: 53px;
+
+    padding: 7px 8px;
+
+    border-radius: 9px;
+
+    background:
+        rgba(255,230,200,.04);
+
+    border:
+        1px solid rgba(220,174,72,.11);
+}
+
+
+/* ICON */
+.evaluation-icon {
+    width: 25px;
+    height: 25px;
+
+    display: grid;
+    place-items: center;
+
+    flex-shrink: 0;
+
+    border-radius: 7px;
+
+    color: #eac66d;
+
+    background:
+        rgba(220,174,72,.08);
+
+    font-size: 9px;
+}
+
+
+/* EVALUATION TEXT */
+.evaluation-item strong {
+    display: block;
+
+    font-size: 9.5px;
+    line-height: 1.3;
+
+    color: #eadbd5;
+
+    font-weight: 700;
+}
+
+.evaluation-item small {
+    display: block;
+
+    margin-top: 3px;
+
+    font-size: 7.5px;
+    line-height: 1.35;
+
+    color: #c5adb7;
+}
+
+
+/* TRANSPARENCY */
+.hero-transparency {
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    max-width: 680px;
+
+    margin-top: 9px;
+
+    padding: 8px 10px;
+
+    border-radius: 9px;
+
+    background:
+        rgba(220,174,72,.045);
+
+    border:
+        1px solid rgba(220,174,72,.11);
+}
+
+.transparency-icon {
+    width: 23px;
+    height: 23px;
+
+    display: grid;
+    place-items: center;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    color: #5a0025;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ffe9a0,
+            #bd872d
+        );
+
+    font-size: 9px;
+    font-weight: 900;
+}
+
+.hero-transparency p {
+    margin: 0;
+
+    font-size: 9.5px;
+    line-height: 1.5;
+
+    color: #cdb5bf;
+}
+
+.hero-transparency strong {
+    color: #edca70;
+}
+
+
+/* WARNING */
+.hero-warning {
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    max-width: 680px;
+
+    margin-top: 8px;
+
+    padding: 8px 10px;
+
+    border-radius: 9px;
+
+    background:
+        rgba(220,174,72,.05);
+
+    border:
+        1px solid rgba(220,174,72,.12);
+}
+
+.warning-mark {
+    width: 23px;
+    height: 23px;
+
+    display: grid;
+    place-items: center;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    color: #5a0025;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ffe9a0,
+            #bd872d
+        );
+
+    font-size: 11px;
+    font-weight: 900;
+}
+
+.hero-warning strong {
+    font-size: 10px;
+    line-height: 1.3;
+
+    color: #efcc70;
+}
+
+.hero-warning span {
+    margin-left: 5px;
+
+    font-size: 8px;
+
+    color: #c5adb7;
+}
+
+
+/* TRUST DESCRIPTION */
+.hero-trust-description {
+    max-width: 680px;
+
+    margin-top: 8px;
+
+    font-size: 9.5px;
+    line-height: 1.6;
+
+    color: #c8b0ba;
+}
+
+.hero-trust-description strong {
+    color: #edca70;
+}
+
+
+/* FINAL MESSAGE */
+.hero-final-message {
+    max-width: 680px;
+
+    margin-top: 10px;
+    padding-top: 9px;
+
+    border-top:
+        1px solid rgba(220,174,72,.11);
+}
+
+.hero-final-message p {
+    margin: 0 0 4px;
+
+    font-size: 9px;
+    line-height: 1.4;
+
+    color: #c8b0ba;
+}
+
+.hero-final-message p strong {
+    color: #edca70;
+}
+
+.hero-final-message h4 {
+    margin: 0;
+
+    font-size: 15px;
+    line-height: 1.4;
+
+    color: #f0ddd4;
+}
+
+.hero-final-message h4 span {
+    color: #efca6c;
+}
+
+
+/* =========================================================
+   RIGHT GOLD CARD
+========================================================= */
+
+.gold-card {
+    min-height: 0;
+}
+
+
+/* Compress only the gap between valuation rows */
+.gold-card .valuation-row + .valuation-row {
+    margin-top: 8px;
+}
+
+
+/* MARKET HIGHLIGHT */
+.valuation-highlight {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 9px;
+
+    padding: 8px 10px;
+
+    border-radius: 9px;
+
+    background:
+        rgba(220,174,72,.06);
+
+    border:
+        1px solid rgba(220,174,72,.12);
+}
+
+.valuation-highlight small {
+    display: block;
+
+    font-size: 7px;
+
+    color: #c2aab5;
+}
+
+.valuation-highlight strong {
+    display: block;
+
+    margin-top: 3px;
+
+    font-size: 11px;
+
+    color: #efca6c;
+}
+
+.valuation-highlight > span {
+    width: 26px;
+    height: 26px;
+
+    display: grid;
+    place-items: center;
+
+    border-radius: 50%;
+
+    font-size: 12px;
+
+    color: #5a0025;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fff0b0,
+            #bd872d
+        );
+}
+
+
+/* THIRD FLOATING BADGE */
+.badge-three {
+    right: -18px;
+    top: 50%;
+
+    transform: translateY(-50%);
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1050px) {
+
+    .evaluation-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+    .hero-content {
+        max-width: 760px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .hero-main-description {
+        margin-top: 12px;
+
+        font-size: 15px;
+        line-height: 1.55;
+    }
+
+    .hero-intro {
+        margin-top: 6px;
+
+        font-size: 11.5px;
+        line-height: 1.6;
+    }
+
+
+    .hero-detail-text {
+        margin-top: 8px;
+
+        padding: 7px 9px;
+    }
+
+    .hero-detail-text p {
+        font-size: 9.5px;
+        line-height: 1.6;
+    }
+
+
+    /* TITLE */
+
+    .hero-evaluation-title {
+        margin-top: 11px;
+        margin-bottom: 7px;
+    }
+
+    .hero-evaluation-title h3 {
+        font-size: 12px;
+    }
+
+
+    /* KARAT */
+
+    .karat-list {
+        gap: 3px;
+
+        margin-bottom: 7px;
+    }
+
+    .karat-list span {
+        min-height: 23px;
+
+        padding: 3px 6px;
+
+        font-size: 7.5px;
+    }
+
+
+    /* EVALUATION */
+
+    .evaluation-grid {
+        grid-template-columns: 1fr 1fr;
+
+        gap: 5px;
+    }
+
+    .evaluation-item {
+        min-height: 48px;
+
+        padding: 6px;
+
+        gap: 6px;
+    }
+
+    .evaluation-icon {
+        width: 22px;
+        height: 22px;
+
+        font-size: 8px;
+    }
+
+    .evaluation-item strong {
+        font-size: 8px;
+    }
+
+    .evaluation-item small {
+        font-size: 6.5px;
+    }
+
+
+    /* TRANSPARENCY */
+
+    .hero-transparency {
+        margin-top: 7px;
+
+        padding: 7px 8px;
+    }
+
+    .transparency-icon {
+        width: 21px;
+        height: 21px;
+
+        font-size: 8px;
+    }
+
+    .hero-transparency p {
+        font-size: 8px;
+
+        line-height: 1.55;
+    }
+
+
+    /* WARNING */
+
+    .hero-warning {
+        margin-top: 7px;
+
+        padding: 7px 8px;
+    }
+
+    .warning-mark {
+        width: 21px;
+        height: 21px;
+
+        font-size: 10px;
+    }
+
+    .hero-warning strong {
+        font-size: 9px;
+    }
+
+    .hero-warning span {
+        font-size: 7px;
+    }
+
+
+    /* TRUST */
+
+    .hero-trust-description {
+        margin-top: 7px;
+
+        font-size: 8px;
+
+        line-height: 1.6;
+    }
+
+
+    /* FINAL */
+
+    .hero-final-message {
+        margin-top: 8px;
+
+        padding-top: 8px;
+    }
+
+    .hero-final-message p {
+        font-size: 8px;
+    }
+
+    .hero-final-message h4 {
+        font-size: 12px;
+    }
+
+
+    /* MARKET CARD */
+
+    .valuation-highlight {
+        margin-top: 7px;
+
+        padding: 7px 8px;
+    }
+
+    .valuation-highlight small {
+        font-size: 6px;
+    }
+
+    .valuation-highlight strong {
+        font-size: 9px;
+    }
+
+    .valuation-highlight > span {
+        width: 23px;
+        height: 23px;
+
+        font-size: 10px;
+    }
+
+
+    .badge-three {
+        right: -5px;
+
+        transform:
+            translateY(-50%)
+            scale(.8);
+    }
+
+}
+
+
+/* =========================================================
+   SMALL PHONES
+========================================================= */
+
+@media (max-width: 380px) {
+
+    .hero-main-description {
+        font-size: 14px;
+    }
+
+    .hero-intro {
+        font-size: 10.5px;
+    }
+
+    .hero-detail-text p {
+        font-size: 8.8px;
+    }
+
+    .evaluation-item strong {
+        font-size: 7.5px;
+    }
+
+    .evaluation-item small {
+        font-size: 6px;
+    }
+
+    .hero-final-message h4 {
+        font-size: 11px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -9368,3 +10142,20 @@ body {
 .footer {
     font-family: "Inter", "Noto Sans Malayalam", sans-serif;
 }
+
+
+
+
+
+
+
+/* =========================================================
+   NEST GOLD HERO H1 — SEPARATE FONT
+========================================================= */
+
+.hero .hero-main-title,
+.hero .hero-main-title span,
+.hero .hero-main-title strong {
+    font-family: "Baloo Chettan 2", sans-serif !important;
+}
+
