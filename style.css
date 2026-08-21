@@ -3410,38 +3410,7 @@ footer * {
 
 }
 
-
-/* =========================================================
-   SMALL PHONES
-========================================================= */
-
-@media (max-width: 380px) {
-
-    .hero-main-description {
-        font-size: 14px;
-    }
-
-    .hero-intro {
-        font-size: 10.5px;
-    }
-
-    .hero-detail-text p {
-        font-size: 8.8px;
-    }
-
-    .evaluation-item strong {
-        font-size: 7.5px;
-    }
-
-    .evaluation-item small {
-        font-size: 6px;
-    }
-
-    .hero-final-message h4 {
-        font-size: 11px;
-    }
-
-}
+
 
 
 
