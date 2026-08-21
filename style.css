@@ -3236,7 +3236,7 @@ footer * {
     }
 
     .hero-detail-text p {
-        font-size: 9.5px;
+        font-size: 12.5px;
         line-height: 1.6;
     }
 
@@ -3266,7 +3266,7 @@ footer * {
 
         padding: 3px 6px;
 
-        font-size: 10.5px;
+        font-size: 13.5px;
     }
 
 
@@ -3290,15 +3290,15 @@ footer * {
         width: 22px;
         height: 22px;
 
-        font-size: 15px;
+        font-size: 17px;
     }
 
     .evaluation-item strong {
-        font-size: 12px;
+        font-size: 15px;
     }
 
     .evaluation-item small {
-        font-size: 9.5px;
+        font-size: 13.5px;
     }
 
 
@@ -3318,7 +3318,7 @@ footer * {
     }
 
     .hero-transparency p {
-        font-size: 11px;
+        font-size: 14px;
 
         line-height: 1.55;
     }
@@ -3336,15 +3336,15 @@ footer * {
         width: 21px;
         height: 21px;
 
-        font-size: 10px;
+        font-size: 13px;
     }
 
     .hero-warning strong {
-        font-size: 12px;
+        font-size: 16px;
     }
 
     .hero-warning span {
-        font-size: 10px;
+        font-size: 13px;
     }
 
 
@@ -3353,7 +3353,7 @@ footer * {
     .hero-trust-description {
         margin-top: 7px;
 
-        font-size: 11px;
+        font-size: 13px;
 
         line-height: 1.6;
     }
@@ -3368,11 +3368,11 @@ footer * {
     }
 
     .hero-final-message p {
-        font-size: 11px;
+        font-size: 14px;
     }
 
     .hero-final-message h4 {
-        font-size: 12px;
+        font-size: 14px;
     }
 
 
