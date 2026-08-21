@@ -308,48 +308,19 @@ footer * {
 
 
 
-/* =========================================
-   HEADER BRAND / LOGO
-========================================= */
-
-.brand-logo {
+/* LOGO */
+.brand {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    
-
-    width: auto;
-    height: 100%;
-
     text-decoration: none;
-
-    position: relative;
-    z-index: 5;
 }
 
-.brand-logo img {
-    display: block;
-
-    width: 125px;
-    max-width: 100%;
-
+.brand-logo {
+    width: 80px;
     height: auto;
-
-    max-height: 58px;
-
+    display: block;
     object-fit: contain;
-
-    object-position: center;
-
-    transition:
-        transform .3s ease,
-        filter .3s ease;
 }
-
-.brand-logo:hover img {
-    transform: scale(1.03);
-}
-
 
 
 
@@ -1199,13 +1170,13 @@ footer * {
 }
 
 
-
 /* =========================================
    HERO SECTION
 ========================================= */
 
 .hero {
     min-height: calc(100vh - 20px);
+
     position: relative;
     overflow: hidden;
 
@@ -1214,30 +1185,38 @@ footer * {
 
     background:
         radial-gradient(
-            circle at 78% 42%,
-            rgba(255, 214, 105, .28),
-            transparent 30%
+            circle at 78% 40%,
+            rgba(255, 210, 100, .22),
+            transparent 28%
         ),
         radial-gradient(
             circle at 15% 85%,
-            rgba(180, 0, 75, .32),
-            transparent 38%
+            rgba(160, 0, 65, .28),
+            transparent 35%
         ),
         radial-gradient(
             circle at 50% 0%,
-            rgba(255, 190, 80, .08),
-            transparent 35%
+            rgba(255, 190, 80, .06),
+            transparent 32%
         ),
         linear-gradient(
             135deg,
-            #A8004A 0%,
-            #8F003D 45%,
-            #65002C 100%
+            #12070D 0%,
+            #2A0718 25%,
+            #570022 55%,
+            #72002F 75%,
+            #260712 100%
         );
 
     color: #fff;
 
     padding: 90px 0 0;
+
+    /* BLACKISH DEPTH */
+    box-shadow:
+        inset 0 -120px 140px rgba(0, 0, 0, .50),
+        inset 0 80px 110px rgba(0, 0, 0, .20),
+        0 25px 80px rgba(0, 0, 0, .55);
 }
 
 
@@ -1447,7 +1426,7 @@ footer * {
 
     text-shadow:
         0 4px 30px
-        rgba(55, 0, 25, .28);
+        rgba(0, 0, 0, .40);
 }
 
 
@@ -1480,15 +1459,21 @@ footer * {
 ========================================= */
 
 .hero-description {
-    max-width: 590px;
+    max-width: 620px;
 
     margin-top: 27px;
 
-    color: #F5DDE7;
+    color: #F7E5EB;
 
-    font-size: 15px;
+    font-size: 20px;
 
     line-height: 1.8;
+
+    font-weight: 400;
+
+    text-shadow:
+        0 2px 12px
+        rgba(0, 0, 0, .30);
 }
 
 
@@ -1501,15 +1486,15 @@ footer * {
 
     align-items: center;
 
-    gap: 12px;
+    gap: 16px;
 
-    margin-top: 34px;
+    margin-top: 36px;
 }
 
 
 .hero-primary-btn,
 .hero-secondary-btn {
-    min-height: 50px;
+    min-height: 58px;
 
     display: inline-flex;
 
@@ -1517,17 +1502,23 @@ footer * {
 
     justify-content: center;
 
-    gap: 10px;
+    gap: 11px;
 
-    padding: 0 20px;
+    padding: 0 28px;
 
     border-radius: 100px;
 
-    font-size: 12px;
+    font-size: 18px;
 
-    font-weight: 600;
+    font-weight: 800;
 
-    transition: .3s ease;
+    letter-spacing: .2px;
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        background .3s ease,
+        border-color .3s ease;
 }
 
 
@@ -1539,39 +1530,52 @@ footer * {
     background:
         linear-gradient(
             135deg,
-            #FFE6A0 0%,
-            #E8C36A 45%,
-            #B98232 100%
+            #FFF1B8 0%,
+            #F1D078 35%,
+            #D5A447 65%,
+            #A96F22 100%
         );
 
-    color: #5B0028;
+    color: #4A071F;
+
+    border: 1px solid
+        rgba(255, 240, 180, .80);
 
     box-shadow:
-        0 10px 30px
-        rgba(65, 0, 30, .30),
+        0 12px 30px
+        rgba(0, 0, 0, .35),
 
         0 0 25px
-        rgba(255, 210, 100, .12),
+        rgba(255, 210, 100, .18),
 
-        inset 0 1px
-        rgba(255,255,255,.60);
+        inset 0 1px 2px
+        rgba(255,255,255,.80);
+
+    text-shadow:
+        0 1px 1px
+        rgba(255,255,255,.25);
 }
 
 
 .hero-primary-btn:hover {
-    transform: translateY(-3px);
+    transform:
+        translateY(-4px)
+        scale(1.025);
 
     box-shadow:
-        0 15px 35px
-        rgba(65, 0, 30, .40),
+        0 18px 40px
+        rgba(0, 0, 0, .45),
 
-        0 0 30px
-        rgba(255, 210, 100, .20);
+        0 0 35px
+        rgba(255, 210, 100, .28),
+
+        inset 0 1px 2px
+        rgba(255,255,255,.90);
 }
 
 
 .hero-primary-btn span {
-    font-size: 16px;
+    font-size: 18px;
 }
 
 
@@ -1580,33 +1584,60 @@ footer * {
 ========================================= */
 
 .hero-secondary-btn {
-    border: 1px solid
-        rgba(255, 220, 150, .42);
+    min-height: 58px;
 
-    color: #FFF0D0;
+    border: 1px solid
+        rgba(255, 220, 150, .55);
+
+    color: #FFF2D8;
 
     background:
-        rgba(105, 0, 45, .38);
+        linear-gradient(
+            135deg,
+            rgba(255,255,255,.10),
+            rgba(0,0,0,.25)
+        );
 
-    backdrop-filter: blur(12px);
+    backdrop-filter: blur(14px);
 
-    -webkit-backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(14px);
+
+    box-shadow:
+        0 10px 28px
+        rgba(0, 0, 0, .28),
+
+        inset 0 1px
+        rgba(255,255,255,.12);
 }
 
 
 .hero-secondary-btn:hover {
+    transform:
+        translateY(-4px);
+
     background:
-        rgba(255, 220, 140, .10);
+        linear-gradient(
+            135deg,
+            rgba(255, 220, 140, .16),
+            rgba(0, 0, 0, .28)
+        );
 
     border-color:
-        rgba(255, 215, 120, .65);
+        rgba(255, 220, 140, .85);
 
-    color: #FFE8B0;
+    color: #FFE9AF;
+
+    box-shadow:
+        0 16px 35px
+        rgba(0, 0, 0, .38),
+
+        0 0 25px
+        rgba(255, 210, 100, .12);
 }
 
 
 .whatsapp-icon {
-    font-size: 12px;
+    font-size: 15px;
 
     color: #8EE39A;
 }
@@ -1639,7 +1670,7 @@ footer * {
 
     font-size: 10px;
 
-    font-weight: 500;
+    font-weight: 600;
 
     color: #FFF0DF;
 }
@@ -1661,6 +1692,7 @@ footer * {
     height: 30px;
 
     display: grid;
+
     place-items: center;
 
     border: 1px solid
@@ -1739,7 +1771,7 @@ footer * {
         linear-gradient(
             145deg,
             rgba(255, 240, 205, .18),
-            rgba(101, 0, 44, .38)
+            rgba(20, 5, 12, .58)
         );
 
     backdrop-filter: blur(18px);
@@ -1749,7 +1781,7 @@ footer * {
     box-shadow:
 
         0 40px 100px
-        rgba(70, 0, 35, .45),
+        rgba(0, 0, 0, .60),
 
         0 0 60px
         rgba(255, 210, 100, .12),
@@ -1924,6 +1956,7 @@ footer * {
     border-radius: 50%;
 
     display: grid;
+
     place-items: center;
 
     font-family: Georgia, serif;
@@ -1951,8 +1984,7 @@ footer * {
         0 0 80px
         rgba(255, 210, 100, .25),
 
-        inset
-        0 0 25px
+        inset 0 0 25px
         rgba(255,255,255,.20);
 }
 
@@ -2106,6 +2138,7 @@ footer * {
     border-radius: 50%;
 
     display: grid;
+
     place-items: center;
 
     color: #F0CE7E;
@@ -2195,8 +2228,8 @@ footer * {
     background:
         linear-gradient(
             135deg,
-            rgba(126, 0, 54, .88),
-            rgba(86, 0, 38, .82)
+            rgba(70, 5, 30, .92),
+            rgba(12, 5, 9, .90)
         );
 
     border: 1px solid
@@ -2208,7 +2241,7 @@ footer * {
 
     box-shadow:
         0 15px 35px
-        rgba(55, 0, 25, .35),
+        rgba(0, 0, 0, .45),
 
         0 0 25px
         rgba(255, 210, 100, .06),
@@ -2259,6 +2292,7 @@ footer * {
     height: 30px;
 
     display: grid;
+
     place-items: center;
 
     border-radius: 9px;
@@ -2282,7 +2316,7 @@ footer * {
 
     font-size: 10px;
 
-    font-weight: 500;
+    font-weight: 600;
 }
 
 
@@ -2322,9 +2356,13 @@ footer * {
     padding: 14px 0;
 
     background:
-        rgba(85, 0, 38, .38);
+        rgba(10, 3, 7, .48);
 
     backdrop-filter: blur(8px);
+
+    box-shadow:
+        0 -15px 40px
+        rgba(0, 0, 0, .25);
 }
 
 
@@ -2426,6 +2464,11 @@ footer * {
         min-height: auto;
 
         padding-top: 80px;
+
+        box-shadow:
+            inset 0 -80px 100px rgba(0, 0, 0, .50),
+            inset 0 50px 80px rgba(0, 0, 0, .20),
+            0 20px 50px rgba(0, 0, 0, .50);
     }
 
 
@@ -2459,11 +2502,13 @@ footer * {
 
 
     .hero-description {
-        font-size: 13px;
+        font-size: 17px;
 
-        line-height: 1.7;
+        line-height: 1.75;
 
         margin-top: 22px;
+
+        max-width: 100%;
     }
 
 
@@ -2472,13 +2517,21 @@ footer * {
 
         flex-direction: column;
 
-        margin-top: 28px;
+        gap: 12px;
+
+        margin-top: 30px;
     }
 
 
     .hero-primary-btn,
     .hero-secondary-btn {
         width: 100%;
+
+        min-height: 58px;
+
+        padding: 0 24px;
+
+        font-size: 18px;
     }
 
 
@@ -2534,6 +2587,11 @@ footer * {
         padding: 22px;
 
         border-radius: 23px;
+
+        box-shadow:
+            0 30px 70px rgba(0, 0, 0, .65),
+            0 0 40px rgba(255, 210, 100, .10),
+            inset 0 1px rgba(255,255,255,.20);
     }
 
 
@@ -2605,6 +2663,11 @@ footer * {
 
     .hero h1 {
         font-size: 42px;
+    }
+
+
+    .hero-description {
+        font-size: 14px;
     }
 
 
@@ -2776,7 +2839,7 @@ footer * {
 
     color: #787167;
 
-    font-size: 14px;
+    font-size: 18px;
     line-height: 1.9;
 }
 
@@ -2890,7 +2953,7 @@ footer * {
 
     color: #817b71;
 
-    font-size: 10px;
+    font-size: 15px;
     line-height: 1.75;
 }
 
@@ -2916,7 +2979,7 @@ footer * {
     background: #171510;
     color: #e4ca8e;
 
-    font-size: 11px;
+    font-size: 14px;
     font-weight: 600;
 
     transition:
@@ -3073,7 +3136,7 @@ footer * {
     .about-text {
         margin-top: 13px;
 
-        font-size: 11px;
+        font-size: 13px;
         line-height: 1.8;
     }
 
@@ -3113,7 +3176,7 @@ footer * {
     .about-value p {
         margin-top: 7px;
 
-        font-size: 9px;
+        font-size: 14px;
         line-height: 1.7;
     }
 
@@ -3126,7 +3189,7 @@ footer * {
 
         min-height: 52px;
 
-        font-size: 10px;
+        font-size: 13px;
     }
 }
 
@@ -4968,7 +5031,7 @@ footer * {
 
     color: #777167;
 
-    font-size: 14px;
+    font-size: 18px;
 
     line-height: 1.8;
 }
@@ -5133,7 +5196,7 @@ footer * {
 
     color: #242018;
 
-    font-size: 13px;
+    font-size: 15px;
 
     font-weight: 600;
 }
@@ -5144,7 +5207,7 @@ footer * {
 
     color: #827a70;
 
-    font-size: 10px;
+    font-size: 14px;
 
     line-height: 1.75;
 }
@@ -5178,7 +5241,7 @@ footer * {
 
     color: #8f887e;
 
-    font-size: 7px;
+    font-size: 12px;
 
     letter-spacing: 2.2px;
 }
@@ -5316,7 +5379,7 @@ footer * {
     .process-heading p {
         margin-top: 20px;
 
-        font-size: 12px;
+        font-size: 15px;
 
         line-height: 1.75;
     }
@@ -5396,11 +5459,11 @@ footer * {
     }
 
     .step-content h3 {
-        font-size: 11px;
+        font-size: 14px;
     }
 
     .step-content p {
-        font-size: 9px;
+        font-size: 14px;
 
         line-height: 1.7;
     }
@@ -5420,7 +5483,7 @@ footer * {
     }
 
     .process-bottom h3 {
-        font-size: 17px;
+        font-size: 20px;
     }
 
     .process-button {
@@ -5929,7 +5992,7 @@ footer * {
 
     color: #7b7469;
 
-    font-size: 11px;
+    font-size: 15px;
 
     line-height: 1.8;
 }
@@ -5970,7 +6033,7 @@ footer * {
 
     color: #726a5f;
 
-    font-size: 7px;
+    font-size: 10px;
 }
 
 
@@ -6013,7 +6076,7 @@ footer * {
 
     color: #8f692f;
 
-    font-size: 10px;
+    font-size: 13px;
 
     font-weight: 600;
 
@@ -6166,7 +6229,7 @@ footer * {
     .services-intro p {
         margin-top: 20px;
 
-        font-size: 12px;
+        font-size: 14px;
 
         line-height: 1.75;
     }
@@ -6215,7 +6278,7 @@ footer * {
     }
 
     .service-card-content > p {
-        font-size: 10px;
+        font-size: 13px;
 
         line-height: 1.75;
     }
@@ -6227,7 +6290,7 @@ footer * {
     .service-features span {
         padding: 7px 8px;
 
-        font-size: 6.5px;
+        font-size: 9px;
     }
 
     .services-trust {
@@ -6429,7 +6492,7 @@ footer * {
 
     color: #777067;
 
-    font-size: 14px;
+    font-size: 16px;
 
     line-height: 1.8;
 }
@@ -6633,7 +6696,7 @@ footer * {
 
     color: #696259;
 
-    font-size: 11px;
+    font-size: 15px;
 
     line-height: 1.9;
 }
@@ -6686,7 +6749,7 @@ footer * {
 
     color: #28231c;
 
-    font-size: 9px;
+    font-size: 11px;
 
     font-weight: 600;
 }
@@ -6699,7 +6762,7 @@ footer * {
 
     color: #928b80;
 
-    font-size: 7px;
+    font-size: 9px;
 }
 
 
@@ -6748,7 +6811,7 @@ footer * {
 
     color: #80683b;
 
-    font-size: 7px;
+    font-size: 10px;
 
     letter-spacing: 2px;
 
@@ -6772,7 +6835,7 @@ footer * {
 
     color: #756340;
 
-    font-size: 9px;
+    font-size: 11px;
 
     line-height: 1.6;
 }
@@ -6919,7 +6982,7 @@ footer * {
     .trust-heading p {
         margin-top: 20px;
 
-        font-size: 12px;
+        font-size: 14px;
 
         line-height: 1.75;
     }
@@ -6979,7 +7042,7 @@ footer * {
     .testimonial-text {
         margin-top: 26px;
 
-        font-size: 9px;
+        font-size: 13px;
 
         line-height: 1.8;
     }
@@ -6996,11 +7059,11 @@ footer * {
     }
 
     .testimonial-user strong {
-        font-size: 8px;
+        font-size: 11px;
     }
 
     .testimonial-user small {
-        font-size: 6.5px;
+        font-size: 7.8px;
     }
 
     .trust-cta {
