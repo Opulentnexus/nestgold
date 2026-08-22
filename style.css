@@ -26,9 +26,8 @@ a {
 
 
 
-html {
-    scroll-behavior: smooth;
-    scroll-padding-top: 80px; /* adjust to your header height */
+section {
+    scroll-margin-top: 90px;
 }
 
 
