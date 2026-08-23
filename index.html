@@ -2945,7 +2945,137 @@
 
     <script src="script.js"></script>
 
+<script>
+document.addEventListener("DOMContentLoaded", function () {
 
+    const hero = document.querySelector(".hero");
+
+    if (!hero) return;
+
+    /* Elements that will appear one by one */
+    const groups = [
+
+        [
+            ".hero-main-description"
+        ],
+
+        [
+            ".hero-intro"
+        ],
+
+        [
+            ".hero-detail-text"
+        ],
+
+        [
+            ".hero-evaluation-title",
+            ".karat-list",
+            ".evaluation-grid"
+        ],
+
+        [
+            ".hero-transparency"
+        ],
+
+        [
+            ".hero-warning"
+        ],
+
+        [
+            ".hero-trust-description"
+        ],
+
+        [
+            ".hero-final-message"
+        ],
+
+        [
+            ".hero-trust"
+        ]
+
+    ];
+
+    let current = 0;
+
+    /* Hide all groups initially */
+    function hideAll() {
+
+        groups.forEach(group => {
+
+            group.forEach(selector => {
+
+                const elements = hero.querySelectorAll(selector);
+
+                elements.forEach(el => {
+                    el.style.display = "none";
+                });
+
+            });
+
+        });
+
+    }
+
+
+    /* Show selected group */
+    function showGroup(index) {
+
+        hideAll();
+
+        groups[index].forEach(selector => {
+
+            const elements = hero.querySelectorAll(selector);
+
+            elements.forEach(el => {
+
+                el.style.display = "";
+
+                /* Small fade animation */
+                el.style.animation = "heroDetailFade 0.7s ease";
+
+            });
+
+        });
+
+    }
+
+
+    /* Start */
+    showGroup(current);
+
+
+    /* Change every 3 seconds */
+    setInterval(function () {
+
+        current++;
+
+        if (current >= groups.length) {
+            current = 0;
+        }
+
+        showGroup(current);
+
+    }, 3000);
+
+});
+</script>
+
+
+<style>
+@keyframes heroDetailFade {
+
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+</style>
 
 
 </body>
