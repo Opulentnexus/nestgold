@@ -12547,3 +12547,991 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================
+   PLEDGED GOLD VISUAL
+========================================= */
+
+.pledge-visual {
+    position: relative;
+
+    width: 100%;
+    height: 280px;
+
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    isolation: isolate;
+}
+
+
+/* =========================================
+   GRAPHICS CONTAINER
+========================================= */
+
+.pledge-money-graphics {
+    position: absolute;
+
+    inset: 0;
+
+    pointer-events: none;
+
+    z-index: 1;
+}
+
+
+/* =========================================
+   GOLD COINS
+========================================= */
+
+.pledge-coin {
+    position: absolute;
+
+    width: 62px;
+    height: 62px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle at 30% 25%,
+            #fff4b5 0%,
+            #f3d66d 25%,
+            #d3a32e 58%,
+            #98610e 100%
+        );
+
+    border: 3px solid #dfbd50;
+
+    color: #79500a;
+
+    font-family: Arial, sans-serif;
+    font-size: 21px;
+    font-weight: 900;
+
+    box-shadow:
+        0 12px 25px rgba(0, 0, 0, .18),
+        inset 0 3px 5px rgba(255,255,255,.7),
+        inset 0 -5px 7px rgba(90,50,0,.3);
+
+    z-index: 2;
+
+    animation: pledgeCoinFloat 5s ease-in-out infinite;
+}
+
+
+/* INNER COIN CIRCLE */
+
+.pledge-coin::before {
+    content: "";
+
+    position: absolute;
+
+    inset: 7px;
+
+    border-radius: 50%;
+
+    border: 2px solid rgba(110, 70, 5, .32);
+}
+
+
+/* =========================================
+   COIN POSITIONS
+========================================= */
+
+.pledge-coin-1 {
+    top: 18px;
+    left: 12%;
+
+    transform: rotate(-15deg);
+}
+
+.pledge-coin-2 {
+    top: 42px;
+    right: 10%;
+
+    width: 48px;
+    height: 48px;
+
+    font-size: 16px;
+
+    animation-delay: 1s;
+}
+
+.pledge-coin-3 {
+    bottom: 22px;
+    left: 18%;
+
+    width: 43px;
+    height: 43px;
+
+    font-size: 15px;
+
+    animation-delay: 2s;
+}
+
+
+/* =========================================
+   GOLD BAR
+========================================= */
+
+.pledge-gold-bar {
+    position: absolute;
+
+    right: 7%;
+    bottom: 25px;
+
+    width: 92px;
+    height: 48px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 7px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #fff0a0 0%,
+            #e7c65d 30%,
+            #bd8b1d 65%,
+            #f1d873 100%
+        );
+
+    border: 2px solid #d0a531;
+
+    box-shadow:
+        0 12px 22px rgba(0,0,0,.20),
+        inset 0 2px 4px rgba(255,255,255,.7);
+
+    transform: rotate(-8deg);
+
+    z-index: 2;
+
+    animation: goldBarFloat 6s ease-in-out infinite;
+}
+
+
+.pledge-gold-bar span {
+    font-family: Arial, sans-serif;
+
+    font-size: 7px;
+    letter-spacing: 2px;
+
+    color: #76500b;
+}
+
+
+.pledge-gold-bar strong {
+    font-family: Arial, sans-serif;
+
+    font-size: 11px;
+    letter-spacing: 1px;
+
+    color: #6c4807;
+}
+
+
+/* =========================================
+   MONEY NOTES
+========================================= */
+
+.pledge-note {
+    position: absolute;
+
+    width: 105px;
+    height: 54px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 7px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #c9b45d,
+            #eddd91 35%,
+            #b99a37 70%,
+            #dfcf70
+        );
+
+    border: 2px solid rgba(100,70,10,.28);
+
+    box-shadow:
+        0 14px 25px rgba(0,0,0,.16),
+        inset 0 0 0 3px rgba(255,255,255,.20);
+
+    opacity: .65;
+
+    z-index: 1;
+
+    animation: pledgeNoteFloat 7s ease-in-out infinite;
+}
+
+
+/* NOTE BORDER */
+
+.pledge-note::before {
+    content: "";
+
+    position: absolute;
+
+    inset: 6px;
+
+    border: 1px solid rgba(100,70,10,.28);
+
+    border-radius: 4px;
+}
+
+
+/* ₹ SYMBOL */
+
+.pledge-note span {
+    position: relative;
+
+    width: 27px;
+    height: 27px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    border: 2px solid rgba(100,70,10,.30);
+
+    color: #76500b;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 14px;
+    font-weight: 900;
+}
+
+
+/* NOTE POSITIONS */
+
+.pledge-note-1 {
+    top: 105px;
+    left: -15px;
+
+    transform: rotate(-18deg);
+}
+
+
+.pledge-note-2 {
+    top: 90px;
+    right: -20px;
+
+    transform: rotate(18deg) scale(.75);
+
+    animation-delay: 2s;
+}
+
+
+/* =========================================
+   GOLD PARTICLES
+========================================= */
+
+.pledge-dot {
+    position: absolute;
+
+    width: 6px;
+    height: 6px;
+
+    border-radius: 50%;
+
+    background: #d5aa38;
+
+    box-shadow:
+        0 0 12px rgba(213,170,56,.8);
+
+    animation: pledgeDotPulse 4s ease-in-out infinite;
+}
+
+
+.dot-a {
+    top: 30%;
+    left: 25%;
+}
+
+.dot-b {
+    top: 22%;
+    right: 30%;
+
+    animation-delay: 1s;
+}
+
+.dot-c {
+    bottom: 28%;
+    right: 25%;
+
+    animation-delay: 2s;
+}
+
+.dot-d {
+    bottom: 20%;
+    left: 35%;
+
+    animation-delay: 3s;
+}
+
+
+/* =========================================
+   MAIN PLEDGE CIRCLE
+========================================= */
+
+.pledge-circle {
+    position: relative;
+
+    z-index: 10;
+
+    width: 125px;
+    height: 125px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle at 35% 30%,
+            #fff3a7,
+            #e2bb47 45%,
+            #a86d12 100%
+        );
+
+    border: 4px solid #e6c65e;
+
+    box-shadow:
+        0 18px 35px rgba(0,0,0,.25),
+        inset 0 4px 7px rgba(255,255,255,.7),
+        inset 0 -7px 10px rgba(80,45,0,.30);
+}
+
+
+.pledge-circle span {
+    font-family: Arial, sans-serif;
+
+    font-size: 48px;
+    font-weight: 900;
+
+    color: #76500a;
+}
+
+
+/* =========================================
+   RINGS
+========================================= */
+
+.pledge-ring {
+    position: absolute;
+
+    z-index: 3;
+
+    border-radius: 50%;
+
+    pointer-events: none;
+}
+
+
+.ring-a {
+    width: 165px;
+    height: 165px;
+
+    border: 1px solid rgba(218,177,67,.55);
+
+    animation: pledgeRingRotate 12s linear infinite;
+}
+
+
+.ring-b {
+    width: 205px;
+    height: 205px;
+
+    border: 1px dashed rgba(218,177,67,.28);
+
+    animation: pledgeRingRotateReverse 18s linear infinite;
+}
+
+
+/* =========================================
+   ANIMATIONS
+========================================= */
+
+@keyframes pledgeCoinFloat {
+
+    0%,
+    100% {
+        margin-top: 0;
+    }
+
+    50% {
+        margin-top: -10px;
+    }
+}
+
+
+@keyframes goldBarFloat {
+
+    0%,
+    100% {
+        margin-top: 0;
+    }
+
+    50% {
+        margin-top: -8px;
+    }
+}
+
+
+@keyframes pledgeNoteFloat {
+
+    0%,
+    100% {
+        margin-top: 0;
+    }
+
+    50% {
+        margin-top: -10px;
+    }
+}
+
+
+@keyframes pledgeDotPulse {
+
+    0%,
+    100% {
+        opacity: .25;
+        transform: scale(.7);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.3);
+    }
+}
+
+
+@keyframes pledgeRingRotate {
+
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+@keyframes pledgeRingRotateReverse {
+
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+
+/* =========================================
+   H3 — BALOO CHETTAN 2
+========================================= */
+
+.service-card-content h3 {
+    font-family: "Baloo Chettan 2", sans-serif;
+
+    font-weight: 700;
+
+    line-height: 1.35;
+
+    letter-spacing: 0;
+
+    margin-bottom: 18px;
+}
+
+
+
+
+@media (max-width: 480px) {
+
+    .pledge-visual {
+        height: 230px;
+    }
+
+    .pledge-circle {
+        width: 105px;
+        height: 105px;
+    }
+
+    .pledge-circle span {
+        font-size: 40px;
+    }
+
+    .ring-a {
+        width: 140px;
+        height: 140px;
+    }
+
+    .ring-b {
+        width: 175px;
+        height: 175px;
+    }
+
+    .pledge-coin-1 {
+        left: 5%;
+        width: 48px;
+        height: 48px;
+    }
+
+    .pledge-coin-2 {
+        right: 5%;
+        width: 40px;
+        height: 40px;
+    }
+
+    .pledge-coin-3 {
+        left: 10%;
+        width: 35px;
+        height: 35px;
+    }
+
+    .pledge-gold-bar {
+        right: 3%;
+        bottom: 15px;
+
+        transform: rotate(-8deg) scale(.75);
+    }
+
+    .pledge-note-1 {
+        left: -35px;
+
+        transform: rotate(-18deg) scale(.7);
+    }
+
+    .pledge-note-2 {
+        right: -40px;
+
+        transform: rotate(18deg) scale(.6);
+    }
+
+    .service-card-content h3 {
+        font-size: 24px;
+        line-height: 1.4;
+    }
+}
+
+
+.service-card.service-dark
+.service-card-content#pledgedgold
+h3 {
+    font-family: "Baloo Chettan 2", sans-serif !important;
+}
+
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   FIRST SERVICE CARD — LAPTOP EMPTY AREA GRAPHICS
+===================================================== */
+
+.first-card-graphics {
+    position: absolute;
+
+    left: 0;
+    right: 0;
+
+    top: 180px;
+    bottom: 170px;
+
+    pointer-events: none;
+
+    overflow: hidden;
+
+    z-index: 1;
+}
+
+
+/* Make sure first card can contain the graphics */
+
+.service-card:first-child {
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* =====================================================
+   COINS
+===================================================== */
+
+.first-card-graphics .floating-coin {
+    position: absolute;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 58px;
+    height: 58px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle at 30% 25%,
+            #fff3ad,
+            #e6c75c 35%,
+            #c39228 65%,
+            #9b6814 100%
+        );
+
+    border: 3px solid #d8b44c;
+
+    color: #76500b;
+
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+
+    box-shadow:
+        0 12px 25px rgba(120, 83, 20, .18),
+        inset 0 3px 5px rgba(255,255,255,.75),
+        inset 0 -5px 7px rgba(100,60,5,.25);
+
+    animation: firstCoinFloat 5s ease-in-out infinite;
+}
+
+
+/* Inner circle */
+
+.first-card-graphics .floating-coin::before {
+    content: "";
+
+    position: absolute;
+
+    inset: 7px;
+
+    border-radius: 50%;
+
+    border: 2px solid rgba(110, 75, 10, .28);
+}
+
+
+/* Coin positions */
+
+.first-card-graphics .coin-one {
+    left: 14%;
+    top: 12%;
+}
+
+.first-card-graphics .coin-two {
+    right: 15%;
+    top: 30%;
+
+    width: 45px;
+    height: 45px;
+
+    font-size: 16px;
+
+    animation-delay: 1.2s;
+}
+
+.first-card-graphics .coin-three {
+    left: 30%;
+    bottom: 10%;
+
+    width: 40px;
+    height: 40px;
+
+    font-size: 14px;
+
+    animation-delay: 2s;
+}
+
+
+/* =====================================================
+   GOLD BAR
+===================================================== */
+
+.first-card-graphics .floating-gold-bar {
+    position: absolute;
+
+    right: 18%;
+    bottom: 15%;
+
+    width: 100px;
+    height: 52px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 8px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #fff0a0,
+            #e6c45a 35%,
+            #b98219 70%,
+            #f0d875
+        );
+
+    border: 2px solid #d1a839;
+
+    box-shadow:
+        0 12px 25px rgba(90,60,10,.18),
+        inset 0 2px 4px rgba(255,255,255,.7);
+
+    transform: rotate(-8deg);
+
+    animation: firstBarFloat 6s ease-in-out infinite;
+}
+
+
+.first-card-graphics .floating-gold-bar span {
+    font-family: Arial, sans-serif;
+
+    font-size: 7px;
+
+    letter-spacing: 2px;
+
+    color: #76500b;
+}
+
+
+.first-card-graphics .floating-gold-bar strong {
+    font-family: Arial, sans-serif;
+
+    font-size: 11px;
+
+    letter-spacing: 1px;
+
+    color: #684508;
+}
+
+
+/* =====================================================
+   MONEY NOTES
+===================================================== */
+
+.first-card-graphics .floating-note {
+    position: absolute;
+
+    width: 105px;
+    height: 54px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 7px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #d1c06e,
+            #eee09a 35%,
+            #c0a34b 70%,
+            #e1d37c
+        );
+
+    border: 2px solid rgba(110,80,15,.20);
+
+    box-shadow:
+        0 12px 25px rgba(80,60,15,.12),
+        inset 0 0 0 3px rgba(255,255,255,.25);
+
+    opacity: .45;
+
+    animation: firstNoteFloat 7s ease-in-out infinite;
+}
+
+
+.first-card-graphics .floating-note::before {
+    content: "";
+
+    position: absolute;
+
+    inset: 6px;
+
+    border: 1px solid rgba(100,75,15,.25);
+
+    border-radius: 4px;
+}
+
+
+.first-card-graphics .floating-note span {
+    position: relative;
+
+    width: 28px;
+    height: 28px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    border: 2px solid rgba(100,75,15,.25);
+
+    color: #76500b;
+
+    font-family: Arial, sans-serif;
+
+    font-weight: 900;
+}
+
+
+/* Note positions */
+
+.first-card-graphics .note-one {
+    left: 5%;
+    bottom: 25%;
+
+    transform: rotate(-14deg);
+}
+
+
+.first-card-graphics .note-two {
+    right: 4%;
+    top: 8%;
+
+    transform: rotate(13deg) scale(.75);
+
+    animation-delay: 2s;
+}
+
+
+/* =====================================================
+   SMALL SPARKS
+===================================================== */
+
+.first-card-graphics .gold-spark {
+    position: absolute;
+
+    width: 6px;
+    height: 6px;
+
+    border-radius: 50%;
+
+    background: #c99c2d;
+
+    box-shadow:
+        0 0 12px rgba(201,156,45,.6);
+
+    animation: firstSpark 4s ease-in-out infinite;
+}
+
+
+.first-card-graphics .spark-one {
+    top: 28%;
+    left: 38%;
+}
+
+
+.first-card-graphics .spark-two {
+    top: 18%;
+    right: 35%;
+
+    animation-delay: 1s;
+}
+
+
+.first-card-graphics .spark-three {
+    bottom: 28%;
+    right: 32%;
+
+    animation-delay: 2s;
+}
+
+
+/* =====================================================
+   ANIMATIONS
+===================================================== */
+
+@keyframes firstCoinFloat {
+
+    0%,
+    100% {
+        margin-top: 0;
+    }
+
+    50% {
+        margin-top: -10px;
+    }
+}
+
+
+@keyframes firstBarFloat {
+
+    0%,
+    100% {
+        margin-top: 0;
+    }
+
+    50% {
+        margin-top: -8px;
+    }
+}
+
+
+@keyframes firstNoteFloat {
+
+    0%,
+    100% {
+        margin-top: 0;
+    }
+
+    50% {
+        margin-top: -8px;
+    }
+}
+
+
+@keyframes firstSpark {
+
+    0%,
+    100% {
+        opacity: .2;
+        transform: scale(.7);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.3);
+    }
+}
