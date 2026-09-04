@@ -9229,7 +9229,7 @@ footer * {
 
     color: #9a9388;
 
-    font-size: 6.5px;
+    font-size: 8.5px;
 
     letter-spacing: 1.8px;
 }
@@ -9335,7 +9335,7 @@ footer * {
 
     color: #9a9286;
 
-    font-size: 7px;
+    font-size: 9px;
 
     letter-spacing: 2px;
 }
@@ -9346,7 +9346,7 @@ footer * {
 
     color: #252019;
 
-    font-size: 20px;
+    font-size: 21px;
 
     font-weight: 500;
 }
@@ -9375,7 +9375,7 @@ footer * {
             #b88c42
         );
 
-    font-size: 15px;
+    font-size: 16px;
 
     box-shadow:
         0 8px 20px
@@ -9415,7 +9415,7 @@ footer * {
 
     color: #777066;
 
-    font-size: 7px;
+    font-size: 9px;
 
     letter-spacing: 1px;
 }
@@ -9441,7 +9441,7 @@ footer * {
 
     font-family: inherit;
 
-    font-size: 10px;
+    font-size: 12px;
 
     transition:
         border-color .3s ease,
@@ -9528,7 +9528,7 @@ footer * {
 
     font-family: inherit;
 
-    font-size: 10px;
+    font-size: 12px;
 
     font-weight: 600;
 
@@ -9542,7 +9542,7 @@ footer * {
 
 
 .form-submit span {
-    font-size: 14px;
+    font-size: 15px;
 
     transition: .3s ease;
 }
@@ -9574,7 +9574,7 @@ footer * {
 
     color: #9a9288;
 
-    font-size: 7px;
+    font-size: 9px;
 }
 
 
@@ -9628,7 +9628,7 @@ footer * {
     }
 
     .contact-label {
-        font-size: 8px;
+        font-size: 10px;
 
         letter-spacing: 2.3px;
     }
@@ -9649,7 +9649,7 @@ footer * {
     .contact-intro {
         margin-top: 20px;
 
-        font-size: 12px;
+        font-size: 14px;
 
         line-height: 1.75;
     }
@@ -9672,7 +9672,7 @@ footer * {
     }
 
     .contact-option strong {
-        font-size: 9px;
+        font-size: 11px;
     }
 
     .contact-card {
@@ -9689,7 +9689,7 @@ footer * {
         width: 37px;
         height: 37px;
 
-        font-size: 13px;
+        font-size: 15px;
     }
 
     .form-row {
@@ -9714,7 +9714,7 @@ footer * {
 @media (max-width: 380px) {
 
     .contact-content h2 {
-        font-size: 39px;
+        font-size: 40px;
 
         letter-spacing: -2px;
     }
