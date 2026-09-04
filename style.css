@@ -4336,11 +4336,28 @@ footer * {
     overflow: hidden;
 
     background:
+        radial-gradient(
+            circle at 78% 40%,
+            rgba(255, 210, 100, .22),
+            transparent 28%
+        ),
+        radial-gradient(
+            circle at 15% 85%,
+            rgba(160, 0, 65, .28),
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(255, 190, 80, .06),
+            transparent 32%
+        ),
         linear-gradient(
             135deg,
-            #AD0450 0%,
-            #96033F 48%,
-            #70002F 100%
+            #12070D 0%,
+            #2A0718 25%,
+            #570022 55%,
+            #72002F 75%,
+            #260712 100%
         );
 
 }
@@ -6311,8 +6328,30 @@ footer * {
 
     align-items: center;
 
-    background: #171510;
-
+    background:
+        radial-gradient(
+            circle at 78% 40%,
+            rgba(255, 210, 100, .22),
+            transparent 28%
+        ),
+        radial-gradient(
+            circle at 15% 85%,
+            rgba(160, 0, 65, .28),
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(255, 190, 80, .06),
+            transparent 32%
+        ),
+        linear-gradient(
+            135deg,
+            #12070D 0%,
+            #2A0718 25%,
+            #570022 55%,
+            #72002F 75%,
+            #260712 100%
+        );
     color: white;
 }
 
@@ -6320,7 +6359,7 @@ footer * {
 .process-bottom-label {
     display: block;
 
-    color: #8f887e;
+    color: #ebe3d9;
 
     font-size: 12px;
 
@@ -6816,11 +6855,28 @@ footer * {
 .service-dark {
     background:
         radial-gradient(
-            circle at 80% 20%,
-            rgba(201,164,92,.13),
-            transparent 30%
+            circle at 78% 40%,
+            rgba(255, 210, 100, .22),
+            transparent 28%
         ),
-        #171510;
+        radial-gradient(
+            circle at 15% 85%,
+            rgba(160, 0, 65, .28),
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(255, 190, 80, .06),
+            transparent 32%
+        ),
+        linear-gradient(
+            135deg,
+            #12070D 0%,
+            #2A0718 25%,
+            #570022 55%,
+            #72002F 75%,
+            #260712 100%
+        );
 
     color: white;
 
@@ -7071,7 +7127,7 @@ footer * {
 
     margin-top: 13px;
 
-    color: #7b7469;
+    color: #e8e6e6;
 
     font-size: 15px;
 
@@ -7080,7 +7136,7 @@ footer * {
 
 
 .service-dark .service-card-content > p {
-    color: #787167;
+    color: #b8b7b5;
 }
 
 
@@ -7112,7 +7168,7 @@ footer * {
     background:
         rgba(23,21,16,.06);
 
-    color: #726a5f;
+    color: #efefee;
 
     font-size: 10px;
 }
@@ -7121,7 +7177,7 @@ footer * {
 .service-features i {
     font-style: normal;
 
-    color: #a17a37;
+    color: #d7d6d3;
 }
 
 
@@ -7129,12 +7185,12 @@ footer * {
     background:
         rgba(255,255,255,.045);
 
-    color: #777067;
+    color: #bab9b7;
 }
 
 
 .dark-features i {
-    color: #d3b46d;
+    color: #d4d3cf;
 }
 
 
@@ -9735,7 +9791,30 @@ footer * {
 
     position: relative;
 
-    background: #171510;
+   background:
+        radial-gradient(
+            circle at 78% 40%,
+            rgba(255, 210, 100, .22),
+            transparent 28%
+        ),
+        radial-gradient(
+            circle at 15% 85%,
+            rgba(160, 0, 65, .28),
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(255, 190, 80, .06),
+            transparent 32%
+        ),
+        linear-gradient(
+            135deg,
+            #12070D 0%,
+            #2A0718 25%,
+            #570022 55%,
+            #72002F 75%,
+            #260712 100%
+        );
 
     color: #fff;
 
@@ -9763,7 +9842,29 @@ footer * {
     border-radius: 50%;
 
     background:
-        rgba(201,164,92,.08);
+        radial-gradient(
+            circle at 78% 40%,
+            rgba(255, 210, 100, .22),
+            transparent 28%
+        ),
+        radial-gradient(
+            circle at 15% 85%,
+            rgba(160, 0, 65, .28),
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(255, 190, 80, .06),
+            transparent 32%
+        ),
+        linear-gradient(
+            135deg,
+            #12070D 0%,
+            #2A0718 25%,
+            #570022 55%,
+            #72002F 75%,
+            #260712 100%
+        );
 
     filter: blur(70px);
 
@@ -9898,7 +9999,7 @@ footer * {
 
     max-width: 330px;
 
-    color: #888176;
+    color: white;
 
     font-size: 11px;
 
@@ -9954,7 +10055,7 @@ footer * {
 
 .footer-whatsapp b {
 
-    color: #a9caa4;
+    color: white;
 
     font-size: 13px;
 
@@ -10018,7 +10119,7 @@ footer * {
 
     margin-bottom: 12px;
 
-    color: #817a70;
+    color: white;
 
     font-size: 9px;
 
@@ -10055,7 +10156,7 @@ footer * {
 
     margin-top: 5px;
 
-    color: #676158 !important;
+    color: white !important;
 
     font-size: 8px !important;
 
@@ -10097,7 +10198,7 @@ footer * {
 
 .footer-bottom > span {
 
-    color: #625d55;
+    color: white;
 
     font-size: 7px;
 
@@ -10121,7 +10222,7 @@ footer * {
 
 .footer-bottom-links a {
 
-    color: #69635a;
+    color: white;
 
     font-size: 7px;
 
@@ -10165,7 +10266,7 @@ footer * {
         1px solid
         rgba(255,255,255,.09);
 
-    color: #888177;
+    color: white;
 
     font-size: 7px;
 
