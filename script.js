@@ -697,3 +697,21 @@ mediaNext.addEventListener(
 ========================================= */
 
 updateMediaDots();
+
+
+
+
+
+
+
+function showMoreProducts() {
+
+    const hiddenProducts = document.querySelectorAll(".hidden-product");
+    const viewMoreBtn = document.getElementById("viewMoreBtn");
+
+    hiddenProducts.forEach(product => {
+        product.style.display = "block";
+    });
+
+    viewMoreBtn.style.display = "none";
+}
