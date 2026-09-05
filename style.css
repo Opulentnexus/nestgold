@@ -26,6 +26,227 @@ a {
 
 
 
+
+
+
+/* =========================
+   PREMIUM GOLD SPLASH SCREEN
+========================= */
+
+#websiteSplash {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100vh;
+    height: 100dvh;
+    z-index: 999999;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(205, 170, 75, 0.16) 0%,
+            rgba(205, 170, 75, 0.05) 30%,
+            transparent 60%
+        ),
+        linear-gradient(
+            135deg,
+            #10140e 0%,
+            #1b2117 50%,
+            #0d110c 100%
+        );
+
+    transition:
+        opacity 0.8s ease,
+        visibility 0.8s ease;
+}
+
+/* Gold border */
+#websiteSplash::before {
+    content: "";
+    position: absolute;
+    inset: 15px;
+
+    border: 1px solid rgba(210, 174, 77, 0.2);
+
+    pointer-events: none;
+}
+
+/* Center */
+.splash-inner {
+    width: 90%;
+    max-width: 500px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+}
+
+/* Logo */
+.splash-logo {
+    width: clamp(120px, 28vw, 210px);
+    height: auto;
+
+    object-fit: contain;
+
+    margin-bottom: 28px;
+
+    opacity: 0;
+    transform: scale(0.8);
+
+    filter:
+        drop-shadow(0 0 15px rgba(210, 174, 77, 0.3))
+        drop-shadow(0 10px 25px rgba(0, 0, 0, 0.4));
+
+    animation: splashLogo 1.2s cubic-bezier(.16,1,.3,1) forwards;
+}
+
+/* Brand text */
+.splash-title {
+    color: #d8b45c;
+
+    font-size: clamp(18px, 4vw, 28px);
+    font-weight: 500;
+
+    letter-spacing: 5px;
+    text-transform: uppercase;
+
+    margin-bottom: 25px;
+
+    opacity: 0;
+    transform: translateY(10px);
+
+    animation: splashText 1s ease 0.5s forwards;
+}
+
+/* Loading line */
+.splash-loader {
+    width: clamp(120px, 30vw, 180px);
+    height: 2px;
+
+    background: rgba(216, 180, 92, 0.15);
+
+    overflow: hidden;
+
+    opacity: 0;
+
+    animation: splashText 1s ease 0.8s forwards;
+}
+
+.splash-loader span {
+    display: block;
+
+    width: 40%;
+    height: 100%;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        #dfbc67,
+        transparent
+    );
+
+    animation: splashLoading 1.5s ease-in-out infinite;
+}
+
+/* Hide splash */
+#websiteSplash.hide {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+/* =========================
+   ANIMATIONS
+========================= */
+
+@keyframes splashLogo {
+
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+        filter: blur(10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+        filter: blur(0);
+    }
+}
+
+@keyframes splashText {
+
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes splashLoading {
+
+    0% {
+        transform: translateX(-150%);
+    }
+
+    100% {
+        transform: translateX(400%);
+    }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 480px) {
+
+    #websiteSplash::before {
+        inset: 10px;
+    }
+
+    .splash-logo {
+        width: 145px;
+        margin-bottom: 22px;
+    }
+
+    .splash-title {
+        font-size: 16px;
+        letter-spacing: 4px;
+        margin-bottom: 22px;
+    }
+
+    .splash-loader {
+        width: 130px;
+    }
+}
+
+/* Small height devices */
+@media (max-height: 600px) {
+
+    .splash-logo {
+        width: 110px;
+        margin-bottom: 15px;
+    }
+
+    .splash-title {
+        margin-bottom: 15px;
+    }
+}
+
+
+
+
+
 #pledgedgold {
     scroll-margin-top: 285px;
 }
